@@ -17,3 +17,5 @@ Terms respected: link checks send a clear User-Agent, 4 parallel requests max, H
 - `oracle-always-free`: landing page does not list Always Free capacities.
 - `open-webui`: custom license, needs full legal reading.
 - `coingecko-api`: pricing page unreachable during verification.
+- `cerebras`: free tier rate limits not visible on the pricing page.
+- `cloudflare-turnstile`: plan limits live in the docs, not captured yet.

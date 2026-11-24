@@ -1,6 +1,6 @@
 # Known limitations (v0.1)
 
-- **Catalog size**: 71 verified resources. Phase 3 target is 100 to 200. Coverage is thin in design assets, game dev and open data.
+- **Catalog size**: 135 resources (129 verified, 6 Needs Review). Open data and crypto/Web3 APIs are still thin: their pricing pages need a dedicated verification pass.
 - **Logos**: generated monograms, not official logos (avoids trademark and hotlinking issues).
 - **Unknowns**: many free tiers do not state card requirements or commercial terms on their pricing page; they show as unknown. That is honest, but it makes the "no card" and "commercial" filters strict.
 - **Rate limits**: Gemini free tier limits live on a separate page not captured yet; Groq table labels are ambiguous.

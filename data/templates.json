@@ -627,5 +627,168 @@
       "Optional VPS."
     ],
     "jarvis": "Gary will use it for two weeks. Jarvis will use it forever."
+  },
+  {
+    "id": "docs-site",
+    "name": "$0 Docs Site",
+    "pitch": "Documentation or knowledge base with search-friendly static pages and diagrams.",
+    "keywords": [
+      "docs",
+      "documentation",
+      "wiki",
+      "knowledge base",
+      "guide",
+      "manual"
+    ],
+    "slots": {
+      "frontend": [
+        "vitepress"
+      ],
+      "hosting": [
+        "github-pages"
+      ],
+      "analytics": [
+        "goatcounter"
+      ],
+      "automation": [
+        "github-actions"
+      ],
+      "extras": [
+        "mermaid"
+      ]
+    },
+    "conditions": [
+      "Public repository for free GitHub Pages; non-commercial site.",
+      "Builds through GitHub Actions are free on public repos."
+    ],
+    "limits": [
+      "Static only: no comments or accounts."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "Write Markdown, push, done. Jarvis finally has a manual for Gary."
+  },
+  {
+    "id": "local-ai-studio",
+    "name": "$0 Local AI Studio",
+    "pitch": "Chat, image generation, voice and OCR running on your own machine.",
+    "keywords": [
+      "local ai",
+      "offline",
+      "image generation",
+      "tts",
+      "ocr",
+      "private ai",
+      "stable diffusion"
+    ],
+    "slots": {
+      "ai": [
+        "ollama",
+        "comfyui",
+        "whisper-cpp",
+        "piper",
+        "tesseract"
+      ],
+      "frontend": [
+        "open-webui"
+      ]
+    },
+    "conditions": [
+      "Everything runs locally: speed depends on your RAM and GPU.",
+      "Check each model's own license before commercial use."
+    ],
+    "limits": [
+      "Large models need a capable GPU."
+    ],
+    "indirectCosts": [
+      "Electricity and hardware."
+    ],
+    "jarvis": "No API key, no rate limit, no data leaving the room. Gary's GPU fan disagrees."
+  },
+  {
+    "id": "vibe-coding-setup",
+    "name": "$0 Vibe Coding Setup",
+    "pitch": "An AI-assisted coding environment without a subscription.",
+    "keywords": [
+      "vibe coding",
+      "ai coding",
+      "copilot",
+      "agent",
+      "ide",
+      "code assistant",
+      "cursor"
+    ],
+    "slots": {
+      "extras": [
+        "vscodium",
+        "continue",
+        "cline",
+        "biome"
+      ],
+      "ai": [
+        "ollama",
+        "gemini-api",
+        "mcp-servers"
+      ],
+      "automation": [
+        "github-actions",
+        "act"
+      ]
+    },
+    "conditions": [
+      "Local models via Ollama cost nothing; cloud models are billed by their provider.",
+      "Gemini free tier content is used to improve Google products: keep secrets out."
+    ],
+    "limits": [
+      "Local models are slower and weaker than frontier APIs."
+    ],
+    "indirectCosts": [
+      "Optional API usage if you plug a paid model."
+    ],
+    "jarvis": "Gary vibes, Jarvis reviews the diff. Everyone wins."
+  },
+  {
+    "id": "self-hosted-productivity",
+    "name": "$0 Self-hosted Office",
+    "pitch": "Notes, passwords, files, photos and PDFs on your own hardware.",
+    "keywords": [
+      "productivity",
+      "office",
+      "notes",
+      "passwords",
+      "photos",
+      "homelab",
+      "privacy"
+    ],
+    "slots": {
+      "extras": [
+        "appflowy",
+        "vaultwarden",
+        "stirling-pdf",
+        "localsend"
+      ],
+      "storage": [
+        "syncthing",
+        "immich"
+      ],
+      "hosting": [
+        "oracle-always-free"
+      ],
+      "monitoring": [
+        "uptime-kuma"
+      ]
+    },
+    "conditions": [
+      "You handle updates and backups, especially for Vaultwarden.",
+      "Immich and Stirling PDF need a server with enough RAM."
+    ],
+    "limits": [
+      "Always Free capacities at Oracle not verified here."
+    ],
+    "indirectCosts": [
+      "Card verification at Oracle, or your own hardware."
+    ],
+    "jarvis": "Big Tech subscriptions: cancelled. Gary's weekends: also cancelled."
   }
 ]

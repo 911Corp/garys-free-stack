@@ -9,7 +9,7 @@ Find, compare and assemble free developer resources into a complete stack, with 
 - **Resource sheets**: type of free, exact quotas, what happens when exceeded, next paid step, restrictions, license, pros/cons, alternatives, sources with check dates, "report outdated" button.
 - **Compare**: up to 4 side by side, export Markdown, share URL.
 - **Stack Builder**: 12 slots, project context (commercial / sensitive data / 24/7), compatibility findings from documented rules, conditions to stay at $0, dependencies, alternatives, receipt-style cost estimate. Save, export (MD/JSON), import JSON, share URL, X card.
-- **Stack templates**: 15 documented $0 stacks, with conditions, limits and indirect costs.
+- **Stack templates**: 19 documented $0 stacks, with conditions, limits and indirect costs.
 - **Cost simulator**: usage sliders vs documented quotas, which quota breaks first, cost only from published prices.
 - **Hidden gems**, random discovery, favorites, saved stacks, history.
 - **API directory**: 20 APIs from public-apis (MIT), clearly marked unverified.

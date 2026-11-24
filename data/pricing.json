@@ -1061,5 +1061,165 @@
         "checkedAt": "2026-11-24"
       }
     ]
+  },
+  {
+    "id": "posthog",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "events",
+        "limit": 1000000,
+        "period": "month",
+        "label": "1M product analytics events"
+      },
+      {
+        "metric": "errors",
+        "limit": 100000,
+        "period": "month",
+        "label": "100K exceptions"
+      }
+    ],
+    "onExceed": "hard-cap",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "5K session recordings and 1,500 survey responses per month.",
+      "1M feature flag requests per month."
+    ],
+    "sources": [
+      {
+        "label": "PostHog pricing",
+        "url": "https://posthog.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "onExceedNote": "Extra events are permanently dropped; feature flags return a quota-limited response."
+  },
+  {
+    "id": "grafana-cloud",
+    "plan": "Free",
+    "quotas": [],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "Grafana pricing",
+        "url": "https://grafana.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "better-stack",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "monitors",
+        "limit": 10,
+        "period": "total",
+        "label": "10 monitors and heartbeats"
+      },
+      {
+        "metric": "errors",
+        "limit": 100000,
+        "period": "month",
+        "label": "100,000 exceptions"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "Better Stack pricing",
+        "url": "https://betterstack.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "backblaze-b2",
+    "plan": "Free storage",
+    "quotas": [
+      {
+        "metric": "storage_gb",
+        "limit": 10,
+        "period": "total",
+        "label": "10 GB storage always free"
+      }
+    ],
+    "onExceed": "billed",
+    "nextPlan": null,
+    "overage": [
+      {
+        "metric": "storage_gb",
+        "usdPerUnit": 6.95,
+        "unitSize": 1000,
+        "label": "$6.95 per TB per month",
+        "billing": "beyond-included"
+      }
+    ],
+    "caveats": [
+      "Free egress up to 3x average monthly storage, then $0.01/GB."
+    ],
+    "sources": [
+      {
+        "label": "Backblaze B2 pricing",
+        "url": "https://www.backblaze.com/cloud-storage/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "pinecone",
+    "plan": "Starter",
+    "quotas": [
+      {
+        "metric": "db_storage_gb",
+        "limit": 2,
+        "period": "total",
+        "label": "2 GB storage"
+      }
+    ],
+    "onExceed": "hard-cap",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "1M read units and 2M write units per month (units, not rows: not simulated)."
+    ],
+    "sources": [
+      {
+        "label": "Pinecone pricing",
+        "url": "https://www.pinecone.io/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "onExceedNote": "Usage past the allowance is blocked until the next period or an upgrade."
+  },
+  {
+    "id": "cloudinary",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "credits",
+        "limit": 25,
+        "period": "month",
+        "label": "25 credits (1 credit = 1,000 transformations, 1 GB storage or 1 GB bandwidth)"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "Cloudinary pricing",
+        "url": "https://cloudinary.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ]
   }
 ]

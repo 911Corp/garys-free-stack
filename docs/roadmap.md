@@ -14,7 +14,7 @@
 - [x] Cost simulator, exports (Markdown / JSON / CSV), share URL, X card
 
 ## Phase 3: Launch prep (next)
-- [ ] 100 to 200 verified resources (quality first; do not block launch on the number)
+- [x] 100 to 200 verified resources (135 in v0.2.0)
 - [ ] Resolve the 4 Needs Review items
 - [ ] Real repo + issue labels (`data-report`, `suggestion`) so report buttons work
 - [ ] Manual QA on iOS Safari / Android Chrome, accessibility pass (axe)

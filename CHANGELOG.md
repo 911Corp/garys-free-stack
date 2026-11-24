@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 (2026-11-24)
+Catalog enrichment. Not deployed until validated.
+- 135 resources (was 71): 56 open source tools checked against their license files, 8 free tiers checked against official pricing pages.
+- New coverage: backend frameworks and ORMs, docs generators, icons, fonts, animation, 2D/3D creative coding, media tools, self-hosted productivity (notes, passwords, photos, PDFs, sync), local AI (chat, image, OCR, TTS, OpenAI-compatible server), vibe coding (Continue, Cline, Aider, MCP servers), observability (PostHog, Grafana Cloud, Better Stack), storage (Backblaze B2, Cloudinary), vectors (Pinecone).
+- 19 stack templates (+ Docs Site, Local AI Studio, Vibe Coding Setup, Self-hosted Office). 21 hidden gems.
+- Cerebras listed as Free Credits (one-time, card required), to show the trial/credits distinction in practice.
+- NocoDB flagged: license switched to the Sustainable Use License on 2026-01-29.
+
 ## 0.1.1 (2026-11-24)
 Pre-launch audit, see `docs/audit-2026-11-24.md`.
 - Dependencies upgraded (React 19, React Router 7, Zod 4, Vite 8, Vitest 5): 0 known vulnerabilities.

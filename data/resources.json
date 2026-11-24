@@ -4671,5 +4671,3734 @@
     ],
     "repo": null,
     "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vue",
+    "name": "Vue",
+    "tagline": "Progressive framework for web UIs.",
+    "description": "Approachable component framework with reactive templates, usable from a script tag up to full apps.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "frontend",
+      "framework",
+      "javascript",
+      "ui"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://vuejs.org/",
+    "docs": "https://vuejs.org/guide/",
+    "repo": "https://github.com/vuejs/core",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "ui-framework"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "react",
+      "svelte"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (vuejs/core)",
+        "url": "https://github.com/vuejs/core",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "sveltekit",
+    "name": "SvelteKit",
+    "tagline": "Full-stack framework for Svelte.",
+    "description": "Application framework for Svelte with routing, server rendering and adapters for static hosts, Node and edge runtimes.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "frontend",
+      "framework",
+      "ssr",
+      "fullstack"
+    ],
+    "roles": [
+      "frontend",
+      "backend"
+    ],
+    "website": "https://svelte.dev/docs/kit",
+    "docs": "https://svelte.dev/docs/kit",
+    "repo": "https://github.com/sveltejs/kit",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "ui-framework",
+        "build-tool"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "astro",
+      "svelte"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (sveltejs/kit)",
+        "url": "https://github.com/sveltejs/kit",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "hono",
+    "name": "Hono",
+    "tagline": "Tiny web framework for every JS runtime.",
+    "description": "Small, fast web framework built on Web Standards that runs on Cloudflare Workers, Deno, Bun, Node and more.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "backend",
+      "framework",
+      "edge",
+      "api"
+    ],
+    "roles": [
+      "backend"
+    ],
+    "website": "https://hono.dev/",
+    "docs": "https://hono.dev/docs/",
+    "repo": "https://github.com/honojs/hono",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "http-framework"
+      ],
+      "requires": [
+        "server-runtime"
+      ]
+    },
+    "pros": [
+      "Same code on edge and Node"
+    ],
+    "cons": [],
+    "alternatives": [
+      "express",
+      "fastify"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (honojs/hono)",
+        "url": "https://github.com/honojs/hono",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "An API framework that fits inside a Worker free tier. Jarvis likes small things that do their job.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "tagline": "The classic minimal Node.js web framework.",
+    "description": "Minimal and flexible Node.js web framework, the long-standing default for HTTP APIs.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "backend",
+      "framework",
+      "node",
+      "api"
+    ],
+    "roles": [
+      "backend"
+    ],
+    "website": "https://expressjs.com/",
+    "docs": "https://expressjs.com/",
+    "repo": "https://github.com/expressjs/express",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "http-framework"
+      ],
+      "requires": [
+        "server-runtime:node"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "fastify",
+      "hono"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (expressjs/express)",
+        "url": "https://github.com/expressjs/express",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "fastify",
+    "name": "Fastify",
+    "tagline": "Fast, low-overhead Node.js web framework.",
+    "description": "Web framework for Node.js focused on performance and a plugin architecture with schema-based validation.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "backend",
+      "framework",
+      "node",
+      "api"
+    ],
+    "roles": [
+      "backend"
+    ],
+    "website": "https://fastify.dev/",
+    "docs": "https://fastify.dev/docs/latest/",
+    "repo": "https://github.com/fastify/fastify",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "http-framework"
+      ],
+      "requires": [
+        "server-runtime:node"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "express",
+      "hono"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (fastify/fastify)",
+        "url": "https://github.com/fastify/fastify",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma ORM",
+    "tagline": "Type-safe ORM for Node.js and TypeScript.",
+    "description": "ORM with a declarative schema, migrations and a generated type-safe client for Postgres, MySQL, SQLite and more.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "orm",
+      "database",
+      "typescript"
+    ],
+    "roles": [
+      "database"
+    ],
+    "website": "https://www.prisma.io/orm",
+    "docs": "https://www.prisma.io/docs",
+    "repo": "https://github.com/prisma/prisma",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "orm"
+      ],
+      "requires": [
+        "sql"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "drizzle"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (prisma/prisma)",
+        "url": "https://github.com/prisma/prisma",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "notes": "Prisma also sells hosted products; only the open source ORM is listed here.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "drizzle",
+    "name": "Drizzle ORM",
+    "tagline": "Lightweight TypeScript ORM that feels like SQL.",
+    "description": "Headless TypeScript ORM with SQL-like queries, works in serverless and edge runtimes.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "orm",
+      "database",
+      "typescript",
+      "edge"
+    ],
+    "roles": [
+      "database"
+    ],
+    "website": "https://orm.drizzle.team/",
+    "docs": "https://orm.drizzle.team/docs/overview",
+    "repo": "https://github.com/drizzle-team/drizzle-orm",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "orm"
+      ],
+      "requires": [
+        "sql"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "prisma"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (drizzle-team/drizzle-orm)",
+        "url": "https://github.com/drizzle-team/drizzle-orm",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "tanstack-query",
+    "name": "TanStack Query",
+    "tagline": "Async state and data fetching for UIs.",
+    "description": "Library for fetching, caching and synchronizing server state in React, Vue, Svelte and Solid.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "frontend",
+      "data-fetching",
+      "library"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://tanstack.com/query",
+    "docs": "https://tanstack.com/query/latest/docs",
+    "repo": "https://github.com/TanStack/query",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "data-fetching"
+      ],
+      "requires": [
+        "ui-framework"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (TanStack/query)",
+        "url": "https://github.com/TanStack/query",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "docusaurus",
+    "name": "Docusaurus",
+    "tagline": "Documentation sites from Markdown.",
+    "description": "Static site generator for documentation with versioning, search integration and MDX.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "documentation",
+      "static-site",
+      "ssg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://docusaurus.io/",
+    "docs": "https://docusaurus.io/docs",
+    "repo": "https://github.com/facebook/docusaurus",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "build-tool",
+        "docs"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "vitepress",
+      "astro"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (facebook/docusaurus)",
+        "url": "https://github.com/facebook/docusaurus",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vitepress",
+    "name": "VitePress",
+    "tagline": "Fast static docs powered by Vite and Vue.",
+    "description": "Static site generator designed for technical documentation, fast to build and to load.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "documentation",
+      "static-site",
+      "ssg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://vitepress.dev/",
+    "docs": "https://vitepress.dev/guide/what-is-vitepress",
+    "repo": "https://github.com/vuejs/vitepress",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "build-tool",
+        "docs"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "docusaurus",
+      "astro"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (vuejs/vitepress)",
+        "url": "https://github.com/vuejs/vitepress",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "biome",
+    "name": "Biome",
+    "tagline": "One fast tool to format and lint JS/TS.",
+    "description": "Formatter and linter for JavaScript, TypeScript, JSON and CSS in a single fast binary.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "linting",
+      "formatting",
+      "cli"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://biomejs.dev/",
+    "docs": "https://biomejs.dev/guides/getting-started/",
+    "repo": "https://github.com/biomejs/biome",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT OR Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "linting"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT OR Apache-2.0 license file (biomejs/biome)",
+        "url": "https://github.com/biomejs/biome",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "tagline": "Offline-first API client, collections in Git.",
+    "description": "Desktop API client that stores collections as plain files in your repository, with no cloud sync required.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "api-client",
+      "testing",
+      "offline",
+      "local-first"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.usebruno.com/",
+    "docs": "https://docs.usebruno.com/",
+    "repo": "https://github.com/usebruno/bruno",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "api-client"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "hoppscotch"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (usebruno/bruno)",
+        "url": "https://github.com/usebruno/bruno",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "An API client that keeps your requests in Git instead of somebody's cloud. Jarvis: finally.",
+    "notes": "Bruno also sells paid editions; the open source app is listed here.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "act",
+    "name": "act",
+    "tagline": "Run GitHub Actions locally.",
+    "description": "Runs your GitHub Actions workflows locally in containers for fast feedback before pushing.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "ci-cd",
+      "cli",
+      "testing",
+      "local-first"
+    ],
+    "roles": [
+      "automation"
+    ],
+    "website": "https://github.com/nektos/act",
+    "docs": null,
+    "repo": "https://github.com/nektos/act",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "ci"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "github-actions"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (nektos/act)",
+        "url": "https://github.com/nektos/act",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "Test the workflow on your machine instead of pushing 14 commits named \"fix ci\". Gary has 14 such commits.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "mailpit",
+    "name": "Mailpit",
+    "tagline": "Catch and inspect emails during development.",
+    "description": "Local SMTP server with a web UI that captures outgoing emails for testing, without sending them.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "email",
+      "testing",
+      "smtp",
+      "local-first"
+    ],
+    "roles": [
+      "email"
+    ],
+    "website": "https://mailpit.axllent.org/",
+    "docs": "https://mailpit.axllent.org/docs/",
+    "repo": "https://github.com/axllent/mailpit",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "smtp-dev"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "resend"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (axllent/mailpit)",
+        "url": "https://github.com/axllent/mailpit",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "keycloak",
+    "name": "Keycloak",
+    "tagline": "Self-hosted identity and access management.",
+    "description": "Identity server with SSO, OAuth2/OpenID Connect, SAML, user federation and an admin console.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "auth",
+      "sso",
+      "oidc",
+      "self-hosted"
+    ],
+    "roles": [
+      "auth"
+    ],
+    "website": "https://www.keycloak.org/",
+    "docs": "https://www.keycloak.org/documentation",
+    "repo": "https://github.com/keycloak/keycloak",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "auth"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "better-auth",
+      "clerk"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (keycloak/keycloak)",
+        "url": "https://github.com/keycloak/keycloak",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "gitea",
+    "name": "Gitea",
+    "tagline": "Lightweight self-hosted Git service.",
+    "description": "Self-hosted Git forge with issues, pull requests, packages and CI (Actions), packaged as a single binary.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "git",
+      "self-hosted",
+      "code-hosting",
+      "ci-cd"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://about.gitea.com/",
+    "docs": "https://docs.gitea.com/",
+    "repo": "https://github.com/go-gitea/gitea",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "git-hosting"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (go-gitea/gitea)",
+        "url": "https://github.com/go-gitea/gitea",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "tabler-icons",
+    "name": "Tabler Icons",
+    "tagline": "5,000+ free SVG icons.",
+    "description": "Large set of consistent outline and filled SVG icons with packages for common frameworks.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "icons",
+      "svg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://tabler.io/icons",
+    "docs": null,
+    "repo": "https://github.com/tabler/tabler-icons",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "icons"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "lucide",
+      "phosphor-icons"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (tabler/tabler-icons)",
+        "url": "https://github.com/tabler/tabler-icons",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "phosphor-icons",
+    "name": "Phosphor Icons",
+    "tagline": "Flexible icon family with six weights.",
+    "description": "Icon family available in thin, light, regular, bold, fill and duotone weights.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "icons",
+      "svg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://phosphoricons.com/",
+    "docs": null,
+    "repo": "https://github.com/phosphor-icons/core",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "icons"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "lucide",
+      "tabler-icons"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (phosphor-icons/core)",
+        "url": "https://github.com/phosphor-icons/core",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "inter-font",
+    "name": "Inter",
+    "tagline": "Open typeface designed for screens.",
+    "description": "Sans-serif typeface built for user interfaces, with variable font support.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "fonts",
+      "typography"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://rsms.me/inter/",
+    "docs": null,
+    "repo": "https://github.com/rsms/inter",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "SIL OFL 1.1",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "fonts"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "jetbrains-mono"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "SIL OFL 1.1 license file (rsms/inter)",
+        "url": "https://github.com/rsms/inter",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "jetbrains-mono",
+    "name": "JetBrains Mono",
+    "tagline": "Open monospace font for developers.",
+    "description": "Monospaced typeface designed for reading code, with programming ligatures.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "fonts",
+      "typography",
+      "monospace"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://www.jetbrains.com/lp/mono/",
+    "docs": null,
+    "repo": "https://github.com/JetBrains/JetBrainsMono",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "SIL OFL 1.1",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "fonts"
+      ],
+      "requires": []
+    },
+    "alternatives": [
+      "inter-font"
+    ],
+    "sources": [
+      {
+        "label": "OFL.txt in JetBrains/JetBrainsMono",
+        "url": "https://github.com/JetBrains/JetBrainsMono",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "pros": [],
+    "cons": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "squoosh",
+    "name": "Squoosh",
+    "tagline": "Image compression in the browser.",
+    "description": "Web app that compresses and converts images (WebP, AVIF, JPEG XL) locally in the browser with side-by-side preview.",
+    "categories": [
+      "design",
+      "open-source-local"
+    ],
+    "tags": [
+      "image-optimization",
+      "conversion",
+      "local-first"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://squoosh.app/",
+    "docs": null,
+    "repo": "https://github.com/GoogleChromeLabs/squoosh",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "image-optimization"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (GoogleChromeLabs/squoosh)",
+        "url": "https://github.com/GoogleChromeLabs/squoosh",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "Shrink images in a tab, nothing uploaded. Gary's 9 MB hero image is now 180 KB.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "mermaid",
+    "name": "Mermaid",
+    "tagline": "Diagrams from text, rendered in Markdown.",
+    "description": "Generates flowcharts, sequence diagrams, Gantt charts and more from a text syntax; supported in many Markdown tools.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "diagrams",
+      "documentation",
+      "markdown"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://mermaid.js.org/",
+    "docs": "https://mermaid.js.org/intro/",
+    "repo": "https://github.com/mermaid-js/mermaid",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "diagrams"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "excalidraw"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (mermaid-js/mermaid)",
+        "url": "https://github.com/mermaid-js/mermaid",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "daisyui",
+    "name": "daisyUI",
+    "tagline": "Component classes for Tailwind CSS.",
+    "description": "Tailwind CSS plugin adding semantic component classes and themes.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "components",
+      "ui-kit",
+      "css"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://daisyui.com/",
+    "docs": null,
+    "repo": "https://github.com/saadeghi/daisyui",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "components"
+      ],
+      "requires": [
+        "css"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "shadcn-ui"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (saadeghi/daisyui)",
+        "url": "https://github.com/saadeghi/daisyui",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "radix-primitives",
+    "name": "Radix Primitives",
+    "tagline": "Unstyled accessible React components.",
+    "description": "Low-level, accessible UI primitives for React that you style yourself.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "components",
+      "accessibility",
+      "react"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://www.radix-ui.com/primitives",
+    "docs": null,
+    "repo": "https://github.com/radix-ui/primitives",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "components"
+      ],
+      "requires": [
+        "ui-framework"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "shadcn-ui"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (radix-ui/primitives)",
+        "url": "https://github.com/radix-ui/primitives",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "motion",
+    "name": "Motion",
+    "tagline": "Animation library for React and JS.",
+    "description": "Production-ready animation library for JavaScript, React and Vue with gestures and layout animations.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "animation",
+      "react",
+      "ui"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://motion.dev/",
+    "docs": "https://motion.dev/docs",
+    "repo": "https://github.com/motiondivision/motion",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "animation"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "lottie-web"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (motiondivision/motion)",
+        "url": "https://github.com/motiondivision/motion",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "notes": "Motion also sells paid extras; the open source library is listed here.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "lottie-web",
+    "name": "Lottie Web",
+    "tagline": "Render After Effects animations on the web.",
+    "description": "Renders Lottie JSON animations exported from After Effects as SVG, canvas or HTML.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "animation",
+      "svg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://airbnb.io/lottie/",
+    "docs": null,
+    "repo": "https://github.com/airbnb/lottie-web",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "animation"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "motion"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (airbnb/lottie-web)",
+        "url": "https://github.com/airbnb/lottie-web",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "pixijs",
+    "name": "PixiJS",
+    "tagline": "Fast 2D WebGL/WebGPU renderer.",
+    "description": "2D rendering engine for the web, used for games, interactive art and data visualizations.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "game-engine",
+      "creative-coding",
+      "webgl",
+      "2d"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://pixijs.com/",
+    "docs": "https://pixijs.com/8.x/guides",
+    "repo": "https://github.com/pixijs/pixijs",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "game-engine"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "phaser",
+      "threejs"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (pixijs/pixijs)",
+        "url": "https://github.com/pixijs/pixijs",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "threejs",
+    "name": "three.js",
+    "tagline": "The 3D library of the web.",
+    "description": "JavaScript 3D library over WebGL and WebGPU for scenes, games and visual experiments.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "3d",
+      "webgl",
+      "creative-coding"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://threejs.org/",
+    "docs": "https://threejs.org/docs/",
+    "repo": "https://github.com/mrdoob/three.js",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "3d"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "pixijs"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (mrdoob/three.js)",
+        "url": "https://github.com/mrdoob/three.js",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "p5js",
+    "name": "p5.js",
+    "tagline": "Creative coding for artists and beginners.",
+    "description": "JavaScript library for creative coding with a focus on accessibility for artists, designers and educators.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "creative-coding",
+      "canvas",
+      "education"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://p5js.org/",
+    "docs": "https://p5js.org/reference/",
+    "repo": "https://github.com/processing/p5.js",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "LGPL-2.1",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "creative-coding"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "pixijs",
+      "threejs"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "LGPL-2.1 license file (processing/p5.js)",
+        "url": "https://github.com/processing/p5.js",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "tagline": "Convert, cut and stream any audio or video.",
+    "description": "Command-line toolkit to record, convert and stream audio and video in almost any format.",
+    "categories": [
+      "design",
+      "open-source-local"
+    ],
+    "tags": [
+      "audio",
+      "video",
+      "conversion",
+      "cli"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://ffmpeg.org/",
+    "docs": "https://ffmpeg.org/documentation.html",
+    "repo": "https://github.com/FFmpeg/FFmpeg",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "LGPL-2.1+ (GPL-2.0+ with --enable-gpl)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "media-conversion"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "Enabling GPL parts at build time switches the license to GPL v2+."
+    ],
+    "sources": [
+      {
+        "label": "LGPL-2.1+ (GPL-2.0+ with --enable-gpl) license file (FFmpeg/FFmpeg)",
+        "url": "https://github.com/FFmpeg/FFmpeg",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "yt-dlp",
+    "name": "yt-dlp",
+    "tagline": "Command-line audio/video downloader.",
+    "description": "Feature-rich command-line downloader for media from many sites.",
+    "categories": [
+      "design",
+      "open-source-local"
+    ],
+    "tags": [
+      "video",
+      "audio",
+      "cli"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://github.com/yt-dlp/yt-dlp",
+    "docs": null,
+    "repo": "https://github.com/yt-dlp/yt-dlp",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Unlicense (public domain)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "media-download"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "Downloading content may be restricted by the terms of the site and by copyright. You are responsible for what you download."
+    ],
+    "sources": [
+      {
+        "label": "Unlicense (public domain) license file (yt-dlp/yt-dlp)",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "maplibre",
+    "name": "MapLibre GL JS",
+    "tagline": "Open source interactive vector maps.",
+    "description": "Library for interactive vector tile maps in the browser, community fork of Mapbox GL JS v1.",
+    "categories": [
+      "data-apis",
+      "development"
+    ],
+    "tags": [
+      "maps",
+      "geolocation",
+      "webgl"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://maplibre.org/",
+    "docs": "https://maplibre.org/maplibre-gl-js/docs/",
+    "repo": "https://github.com/maplibre/maplibre-gl-js",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "BSD-3-Clause",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "map-renderer"
+      ],
+      "requires": [
+        "map-tiles"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "You still need a tile source (self-hosted or a provider)."
+    ],
+    "sources": [
+      {
+        "label": "BSD-3-Clause license file (maplibre/maplibre-gl-js)",
+        "url": "https://github.com/maplibre/maplibre-gl-js",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "appflowy",
+    "name": "AppFlowy",
+    "tagline": "Open source Notion alternative.",
+    "description": "Workspace for docs, wikis and project boards that you can run locally or self-host.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "productivity",
+      "notes",
+      "project-management",
+      "notion-alternative"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://appflowy.com/",
+    "docs": null,
+    "repo": "https://github.com/AppFlowy-IO/AppFlowy",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "notes"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "logseq"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (AppFlowy-IO/AppFlowy)",
+        "url": "https://github.com/AppFlowy-IO/AppFlowy",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "notes": "AppFlowy also sells cloud plans; only the open source app is listed.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "logseq",
+    "name": "Logseq",
+    "tagline": "Local-first outliner and knowledge base.",
+    "description": "Privacy-first knowledge management app working on plain Markdown and Org files on your disk.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "productivity",
+      "notes",
+      "knowledge-base",
+      "local-first"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://logseq.com/",
+    "docs": null,
+    "repo": "https://github.com/logseq/logseq",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "notes"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "appflowy"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (logseq/logseq)",
+        "url": "https://github.com/logseq/logseq",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "immich",
+    "name": "Immich",
+    "tagline": "Self-hosted photo and video backup.",
+    "description": "Self-hosted Google Photos alternative with mobile backup, face recognition and sharing.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "photos",
+      "backup",
+      "self-hosted",
+      "google-photos-alternative"
+    ],
+    "roles": [
+      "storage"
+    ],
+    "website": "https://immich.app/",
+    "docs": "https://immich.app/docs/overview/introduction",
+    "repo": "https://github.com/immich-app/immich",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "photo-library"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (immich-app/immich)",
+        "url": "https://github.com/immich-app/immich",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vaultwarden",
+    "name": "Vaultwarden",
+    "tagline": "Lightweight Bitwarden-compatible server.",
+    "description": "Unofficial Bitwarden-compatible password manager server written in Rust, light enough for small machines.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "passwords",
+      "security",
+      "self-hosted"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://github.com/dani-garcia/vaultwarden",
+    "docs": null,
+    "repo": "https://github.com/dani-garcia/vaultwarden",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "password-manager"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "Unofficial: not affiliated with Bitwarden. Securing and backing up the server is on you."
+    ],
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (dani-garcia/vaultwarden)",
+        "url": "https://github.com/dani-garcia/vaultwarden",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "plane",
+    "name": "Plane",
+    "tagline": "Open source project tracking (Jira/Linear style).",
+    "description": "Project management with issues, cycles and modules; self-hostable.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "project-management",
+      "issues",
+      "self-hosted"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://plane.so/",
+    "docs": null,
+    "repo": "https://github.com/makeplane/plane",
+    "freeType": "community-edition",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "project-management"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (makeplane/plane)",
+        "url": "https://github.com/makeplane/plane",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "notes": "Plane sells cloud and commercial editions; the AGPL community edition is listed.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "stirling-pdf",
+    "name": "Stirling PDF",
+    "tagline": "Self-hosted PDF toolbox.",
+    "description": "Web app to merge, split, convert, compress, OCR and sign PDFs on your own server.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "pdf",
+      "conversion",
+      "self-hosted",
+      "utilities"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.stirlingpdf.com/",
+    "docs": null,
+    "repo": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "pdf-tools"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (Stirling-Tools/Stirling-PDF)",
+        "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "Every PDF tool you pay for online, on your own box. Gary merged his tax PDFs. Jarvis is proud.",
+    "notes": "Some enterprise features are paid; the MIT-licensed app is listed.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "paperless-ngx",
+    "name": "Paperless-ngx",
+    "tagline": "Scan, OCR and archive your paperwork.",
+    "description": "Document management system that OCRs, tags and indexes your scanned documents.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "documents",
+      "ocr",
+      "self-hosted"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://docs.paperless-ngx.com/",
+    "docs": null,
+    "repo": "https://github.com/paperless-ngx/paperless-ngx",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "GPL-3.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "document-archive"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "GPL-3.0 license file (paperless-ngx/paperless-ngx)",
+        "url": "https://github.com/paperless-ngx/paperless-ngx",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "syncthing",
+    "name": "Syncthing",
+    "tagline": "Peer-to-peer file sync, no cloud.",
+    "description": "Continuous file synchronization between your devices, encrypted, with no central server.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "sync",
+      "files",
+      "p2p",
+      "local-first"
+    ],
+    "roles": [
+      "storage"
+    ],
+    "website": "https://syncthing.net/",
+    "docs": "https://docs.syncthing.net/",
+    "repo": "https://github.com/syncthing/syncthing",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MPL-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "file-sync"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MPL-2.0 license file (syncthing/syncthing)",
+        "url": "https://github.com/syncthing/syncthing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "Dropbox without Dropbox. Your laptop and your phone talk directly.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "localsend",
+    "name": "LocalSend",
+    "tagline": "AirDrop for every OS, on your local network.",
+    "description": "Cross-platform app to send files between nearby devices over the local network, no internet or account needed.",
+    "categories": [
+      "open-source-local"
+    ],
+    "tags": [
+      "files",
+      "sharing",
+      "local-first"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://localsend.org/",
+    "docs": null,
+    "repo": "https://github.com/localsend/localsend",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "file-sharing"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (localsend/localsend)",
+        "url": "https://github.com/localsend/localsend",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "ntfy",
+    "name": "ntfy",
+    "tagline": "Push notifications via simple HTTP calls.",
+    "description": "Send push notifications to your phone or desktop with a plain HTTP request; self-hostable.",
+    "categories": [
+      "data-apis",
+      "open-source-local"
+    ],
+    "tags": [
+      "notifications",
+      "push",
+      "self-hosted"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://ntfy.sh/",
+    "docs": "https://docs.ntfy.sh/",
+    "repo": "https://github.com/binwiederhier/ntfy",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0 / GPL-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "notifications"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 / GPL-2.0 license file (binwiederhier/ntfy)",
+        "url": "https://github.com/binwiederhier/ntfy",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "curl -d \"deploy done\" ntfy.sh/your-topic and your phone buzzes. Gary uses it for price alerts. Obviously.",
+    "notes": "The hosted ntfy.sh service has its own plans, not verified here.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "activepieces",
+    "name": "Activepieces",
+    "tagline": "Open source Zapier alternative.",
+    "description": "No-code automation builder with many integrations and AI pieces; community edition is MIT.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "automation",
+      "workflows",
+      "no-code",
+      "self-hosted"
+    ],
+    "roles": [
+      "automation"
+    ],
+    "website": "https://www.activepieces.com/",
+    "docs": "https://www.activepieces.com/docs",
+    "repo": "https://github.com/activepieces/activepieces",
+    "freeType": "community-edition",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT (community) + commercial EE",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "automation"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "n8n",
+      "node-red"
+    ],
+    "restrictions": [
+      "Code under packages/ee is under a commercial license."
+    ],
+    "sources": [
+      {
+        "label": "MIT (community) + commercial EE license file (activepieces/activepieces)",
+        "url": "https://github.com/activepieces/activepieces",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "node-red",
+    "name": "Node-RED",
+    "tagline": "Flow-based automation for APIs and IoT.",
+    "description": "Browser-based flow editor to wire APIs, devices and services together, runs on small hardware.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "automation",
+      "iot",
+      "workflows",
+      "low-code"
+    ],
+    "roles": [
+      "automation"
+    ],
+    "website": "https://nodered.org/",
+    "docs": "https://nodered.org/docs/",
+    "repo": "https://github.com/node-red/node-red",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "automation"
+      ],
+      "requires": [
+        "server-runtime:node"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "n8n",
+      "activepieces"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (node-red/node-red)",
+        "url": "https://github.com/node-red/node-red",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "changedetection",
+    "name": "changedetection.io",
+    "tagline": "Watch web pages and get alerts on changes.",
+    "description": "Self-hosted website change monitoring with notifications, useful for price or terms tracking.",
+    "categories": [
+      "data-apis",
+      "open-source-local"
+    ],
+    "tags": [
+      "monitoring",
+      "scraping",
+      "alerts",
+      "self-hosted"
+    ],
+    "roles": [
+      "monitoring"
+    ],
+    "website": "https://changedetection.io/",
+    "docs": null,
+    "repo": "https://github.com/dgtlmoon/changedetection.io",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "page-monitoring"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (dgtlmoon/changedetection.io)",
+        "url": "https://github.com/dgtlmoon/changedetection.io",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "Watches pricing pages for you. Free Stack plans to use exactly this kind of tool to catch free tier changes.",
+    "notes": "A hosted paid version exists; self-hosted is listed.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "nocodb",
+    "name": "NocoDB",
+    "tagline": "Turn a database into a spreadsheet UI (Airtable style).",
+    "description": "No-code platform that puts a spreadsheet interface and APIs on top of SQL databases.",
+    "categories": [
+      "open-source-local",
+      "development"
+    ],
+    "tags": [
+      "no-code",
+      "database",
+      "airtable-alternative",
+      "self-hosted"
+    ],
+    "roles": [
+      "database",
+      "extras"
+    ],
+    "website": "https://nocodb.com/",
+    "docs": "https://docs.nocodb.com/",
+    "repo": "https://github.com/nocodb/nocodb",
+    "freeType": "community-edition",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Sustainable Use License (fair-code, not OSI, since 2026-01-29)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "no-code-db"
+      ],
+      "requires": [
+        "sql"
+      ]
+    },
+    "restrictions": [
+      "License changed to the Sustainable Use License on 2026-01-29: check the terms before commercial or hosted use."
+    ],
+    "pros": [
+      "Spreadsheet UI on your own DB"
+    ],
+    "cons": [
+      "Not OSI open source anymore"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "Sustainable Use License license file (nocodb/nocodb)",
+        "url": "https://github.com/nocodb/nocodb",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "jan",
+    "name": "Jan",
+    "tagline": "Desktop app to chat with local LLMs offline.",
+    "description": "Open source ChatGPT-style desktop app that runs models locally, with an OpenAI-compatible local server.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "llm",
+      "local-models",
+      "chat-ui",
+      "local-first"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://jan.ai/",
+    "docs": null,
+    "repo": "https://github.com/janhq/jan",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "chat-ui",
+        "llm-local",
+        "llm-api"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "ollama",
+      "open-webui"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (janhq/jan)",
+        "url": "https://github.com/janhq/jan",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "comfyui",
+    "name": "ComfyUI",
+    "tagline": "Node-based local image generation.",
+    "description": "Modular graph interface for diffusion models to generate images and video on your own GPU.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "image-generation",
+      "diffusion",
+      "local-models"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://www.comfy.org/",
+    "docs": null,
+    "repo": "https://github.com/comfyanonymous/ComfyUI",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "GPL-3.0",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "image-generation"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "Needs a capable GPU for reasonable speed. Model licenses vary per model."
+    ],
+    "sources": [
+      {
+        "label": "GPL-3.0 license file (comfyanonymous/ComfyUI)",
+        "url": "https://github.com/comfyanonymous/ComfyUI",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "continue",
+    "name": "Continue",
+    "tagline": "Open source AI code assistant for your IDE.",
+    "description": "IDE extension for VS Code and JetBrains that connects any model, including local ones, for chat, edit and autocomplete.",
+    "categories": [
+      "ai",
+      "development"
+    ],
+    "tags": [
+      "vibe-coding",
+      "code-assistant",
+      "ide"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.continue.dev/",
+    "docs": "https://docs.continue.dev/",
+    "repo": "https://github.com/continuedev/continue",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "code-assistant"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "cline",
+      "aider",
+      "github-copilot-free"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (continuedev/continue)",
+        "url": "https://github.com/continuedev/continue",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cline",
+    "name": "Cline",
+    "tagline": "Autonomous coding agent inside VS Code.",
+    "description": "VS Code extension that plans and edits code, runs commands and uses MCP tools, with the model of your choice.",
+    "categories": [
+      "ai",
+      "development"
+    ],
+    "tags": [
+      "vibe-coding",
+      "ai-agents",
+      "code-assistant",
+      "mcp"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://cline.bot/",
+    "docs": "https://docs.cline.bot/",
+    "repo": "https://github.com/cline/cline",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "code-assistant",
+        "ai-agents"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "continue",
+      "aider"
+    ],
+    "restrictions": [
+      "The extension is free; model usage is billed by whichever provider you plug in (or free with local models)."
+    ],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (cline/cline)",
+        "url": "https://github.com/cline/cline",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "aider",
+    "name": "Aider",
+    "tagline": "AI pair programming in your terminal.",
+    "description": "Command-line coding assistant that edits files in your Git repo and commits changes, works with many models.",
+    "categories": [
+      "ai",
+      "development"
+    ],
+    "tags": [
+      "vibe-coding",
+      "cli",
+      "code-assistant"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://aider.chat/",
+    "docs": "https://aider.chat/docs/",
+    "repo": "https://github.com/Aider-AI/aider",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "code-assistant"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "continue",
+      "cline"
+    ],
+    "restrictions": [
+      "Model costs depend on the provider you use."
+    ],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (Aider-AI/aider)",
+        "url": "https://github.com/Aider-AI/aider",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "mcp-servers",
+    "name": "MCP reference servers",
+    "tagline": "Official Model Context Protocol server examples.",
+    "description": "Reference implementations of MCP servers (filesystem, git, fetch, memory...) to plug tools into AI agents.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "mcp",
+      "ai-agents",
+      "vibe-coding"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://modelcontextprotocol.io/",
+    "docs": "https://modelcontextprotocol.io/docs",
+    "repo": "https://github.com/modelcontextprotocol/servers",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT / Apache-2.0 (in transition)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "mcp"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "Reference implementations, meant as examples: review before production use."
+    ],
+    "sources": [
+      {
+        "label": "MIT / Apache-2.0 (in transition) license file (modelcontextprotocol/servers)",
+        "url": "https://github.com/modelcontextprotocol/servers",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "transformers-js",
+    "name": "Transformers.js",
+    "tagline": "Run ML models in the browser.",
+    "description": "Runs Hugging Face models directly in the browser or Node with WebGPU/WASM, no server needed.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "ml",
+      "browser",
+      "embeddings",
+      "local-first"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://huggingface.co/docs/transformers.js",
+    "docs": "https://huggingface.co/docs/transformers.js",
+    "repo": "https://github.com/huggingface/transformers.js",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "embeddings",
+        "ml-in-browser"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (huggingface/transformers.js)",
+        "url": "https://github.com/huggingface/transformers.js",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "gem": "Embeddings and small models running in the visitor's browser. Your server bill: still $0.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "tesseract",
+    "name": "Tesseract OCR",
+    "tagline": "Open source OCR engine, 100+ languages.",
+    "description": "Optical character recognition engine with command-line tool and library bindings.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "ocr",
+      "text-extraction",
+      "cli"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://tesseract-ocr.github.io/",
+    "docs": "https://tesseract-ocr.github.io/tessdoc/",
+    "repo": "https://github.com/tesseract-ocr/tesseract",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "ocr"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (tesseract-ocr/tesseract)",
+        "url": "https://github.com/tesseract-ocr/tesseract",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "piper",
+    "name": "Piper",
+    "tagline": "Fast local text-to-speech.",
+    "description": "Neural text-to-speech system that runs locally, even on a Raspberry Pi.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "tts",
+      "audio",
+      "local-first"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://github.com/rhasspy/piper",
+    "docs": null,
+    "repo": "https://github.com/rhasspy/piper",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "text-to-speech"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [],
+    "restrictions": [
+      "Voice model licenses vary per voice."
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (rhasspy/piper)",
+        "url": "https://github.com/rhasspy/piper",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "notes": "Check the repository README for the current maintained location of the project.",
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "localai",
+    "name": "LocalAI",
+    "tagline": "Self-hosted OpenAI-compatible API.",
+    "description": "Drop-in OpenAI API replacement that runs LLMs, image, audio and embedding models on your hardware.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "llm",
+      "local-models",
+      "api",
+      "self-hosted"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://localai.io/",
+    "docs": "https://localai.io/docs/",
+    "repo": "https://github.com/mudler/LocalAI",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "llm-api",
+        "llm-local",
+        "embeddings"
+      ],
+      "requires": []
+    },
+    "pros": [],
+    "cons": [],
+    "alternatives": [
+      "ollama"
+    ],
+    "restrictions": [],
+    "sources": [
+      {
+        "label": "MIT license file (mudler/LocalAI)",
+        "url": "https://github.com/mudler/LocalAI",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "posthog",
+    "name": "PostHog (Free)",
+    "tagline": "Product analytics, replay, flags: 1M events free each month.",
+    "description": "Product analytics suite with session replay, feature flags, surveys and error tracking. The free plan is permanent and needs no credit card.",
+    "categories": [
+      "data-apis",
+      "development"
+    ],
+    "tags": [
+      "analytics",
+      "product-analytics",
+      "session-replay",
+      "feature-flags",
+      "error-tracking"
+    ],
+    "roles": [
+      "analytics",
+      "monitoring"
+    ],
+    "website": "https://posthog.com/",
+    "docs": "https://posthog.com/docs",
+    "repo": "https://github.com/PostHog/posthog",
+    "pricingUrl": "https://posthog.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": null,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "analytics",
+        "error-tracking",
+        "feature-flags"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free each month: 1M analytics events, 5K session recordings, 1M feature flag requests, 1,500 survey responses, 100K exceptions.",
+      "On the free plan, extra events are permanently dropped and flags return a quota-limited response. Allowances do not roll over."
+    ],
+    "pros": [
+      "No credit card, not a trial",
+      "Many tools in one"
+    ],
+    "cons": [
+      "Data dropped past the cap"
+    ],
+    "alternatives": [
+      "umami",
+      "sentry"
+    ],
+    "sources": [
+      {
+        "label": "PostHog pricing",
+        "url": "https://posthog.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "grafana-cloud",
+    "name": "Grafana Cloud (Free)",
+    "tagline": "Metrics, logs and traces with 14-day retention.",
+    "description": "Hosted observability stack (Prometheus metrics, Loki logs, Tempo traces, k6 load tests) with a free tier and no credit card.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "monitoring",
+      "observability",
+      "logs",
+      "metrics",
+      "traces",
+      "load-testing"
+    ],
+    "roles": [
+      "monitoring"
+    ],
+    "website": "https://grafana.com/products/cloud/",
+    "docs": "https://grafana.com/docs/grafana-cloud/",
+    "pricingUrl": "https://grafana.com/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": null,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "observability",
+        "logs",
+        "metrics"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "10k active metric series, 50 GB logs, 50 GB traces, 50 GB profiles per month, 14-day retention.",
+      "500 k6 virtual user hours per month; 3 active users."
+    ],
+    "pros": [
+      "Full observability stack",
+      "No credit card"
+    ],
+    "cons": [
+      "14-day retention"
+    ],
+    "alternatives": [
+      "better-stack",
+      "sentry"
+    ],
+    "sources": [
+      {
+        "label": "Grafana pricing",
+        "url": "https://grafana.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "better-stack",
+    "name": "Better Stack (Free)",
+    "tagline": "Uptime monitors, status page and logs for personal projects.",
+    "description": "Uptime monitoring, incident alerts, status pages and log management. The free plan is labelled for personal projects.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "monitoring",
+      "uptime",
+      "status-page",
+      "logs"
+    ],
+    "roles": [
+      "monitoring"
+    ],
+    "website": "https://betterstack.com/",
+    "docs": "https://betterstack.com/docs",
+    "pricingUrl": "https://betterstack.com/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "uptime",
+        "logs"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Labelled \"free for personal projects\".",
+      "10 monitors and heartbeats, 1 status page, 3 GB logs and 3 GB traces kept 3 days, 100,000 exceptions per month.",
+      "Check frequency on free not stated."
+    ],
+    "pros": [
+      "Logs and uptime in one"
+    ],
+    "cons": [
+      "Personal projects",
+      "Short log retention"
+    ],
+    "alternatives": [
+      "uptimerobot",
+      "uptime-kuma"
+    ],
+    "sources": [
+      {
+        "label": "Better Stack pricing",
+        "url": "https://betterstack.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "backblaze-b2",
+    "name": "Backblaze B2",
+    "tagline": "Object storage with 10 GB always free.",
+    "description": "S3-compatible cloud object storage. The first 10 GB of storage are always free, with free egress up to 3x your average monthly storage.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "storage",
+      "object-storage",
+      "s3",
+      "backup"
+    ],
+    "roles": [
+      "storage"
+    ],
+    "website": "https://www.backblaze.com/cloud-storage",
+    "docs": "https://www.backblaze.com/docs/cloud-storage",
+    "pricingUrl": "https://www.backblaze.com/cloud-storage/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "object-storage"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "First 10 GB storage always free; egress free up to 3x average monthly storage, then $0.01/GB.",
+      "Storage beyond the free 10 GB: $6.95 per TB per month."
+    ],
+    "pros": [
+      "Cheap beyond free"
+    ],
+    "cons": [
+      "Card requirement not stated"
+    ],
+    "alternatives": [
+      "cloudflare-r2"
+    ],
+    "sources": [
+      {
+        "label": "Backblaze B2 pricing",
+        "url": "https://www.backblaze.com/cloud-storage/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "pinecone",
+    "name": "Pinecone (Starter)",
+    "tagline": "Managed vector database, 2 GB free.",
+    "description": "Serverless vector database for semantic search and RAG with a free Starter plan.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "vector-db",
+      "embeddings",
+      "rag"
+    ],
+    "roles": [
+      "database",
+      "ai"
+    ],
+    "website": "https://www.pinecone.io/",
+    "docs": "https://docs.pinecone.io/",
+    "pricingUrl": "https://www.pinecone.io/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "vector-db"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Up to 2 GB storage, 1M read units and 2M write units per month, 5 indexes, 1 project, 2 users, 1 GB egress.",
+      "Usage past the monthly allowance is blocked until the next period or an upgrade."
+    ],
+    "pros": [
+      "Fully managed"
+    ],
+    "cons": [
+      "Blocked at the cap"
+    ],
+    "alternatives": [
+      "qdrant",
+      "chroma",
+      "pgvector"
+    ],
+    "sources": [
+      {
+        "label": "Pinecone pricing",
+        "url": "https://www.pinecone.io/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudinary",
+    "name": "Cloudinary (Free)",
+    "tagline": "Image and video API with 25 monthly credits.",
+    "description": "Media management with on-the-fly image transformations, optimization and CDN delivery. Free forever plan, no credit card.",
+    "categories": [
+      "design",
+      "infrastructure"
+    ],
+    "tags": [
+      "images",
+      "video",
+      "image-optimization",
+      "cdn"
+    ],
+    "roles": [
+      "storage",
+      "extras"
+    ],
+    "website": "https://cloudinary.com/",
+    "docs": "https://cloudinary.com/documentation",
+    "pricingUrl": "https://cloudinary.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "image-optimization",
+        "object-storage"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "25 credits per month; 1 credit = 1,000 transformations, or 1 GB storage, or 1 GB image bandwidth.",
+      "Video bandwidth credits are for paid plans only. 3 users, 1 account."
+    ],
+    "pros": [
+      "No credit card",
+      "Transform images via URL"
+    ],
+    "cons": [
+      "Credits are shared across usage"
+    ],
+    "alternatives": [
+      "squoosh",
+      "cloudflare-r2"
+    ],
+    "sources": [
+      {
+        "label": "Cloudinary pricing",
+        "url": "https://cloudinary.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cerebras",
+    "name": "Cerebras Inference ($5 credit)",
+    "tagline": "Fast LLM inference: one-time promo credit, card required.",
+    "description": "High-speed inference API for open models. Free access is a one-time promotional credit after adding a payment method.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "llm",
+      "api",
+      "inference"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://www.cerebras.ai/",
+    "docs": "https://inference-docs.cerebras.ai/",
+    "pricingUrl": "https://www.cerebras.ai/pricing",
+    "freeType": "free-credits",
+    "flags": {
+      "noCard": false,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "llm-api"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Add a valid payment method to receive a one-time $5 promotional credit, which expires 30 days after activation.",
+      "Access pauses when the credit runs out or expires, unless you buy pay-as-you-go credits. You are not charged automatically."
+    ],
+    "pros": [
+      "Very fast inference"
+    ],
+    "cons": [
+      "Not a durable $0"
+    ],
+    "alternatives": [
+      "groq",
+      "gemini-api"
+    ],
+    "status": "needs-review",
+    "notes": "Free tier rate limits were not visible on the pricing page.",
+    "sources": [
+      {
+        "label": "Cerebras pricing",
+        "url": "https://www.cerebras.ai/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-turnstile",
+    "name": "Cloudflare Turnstile",
+    "tagline": "Free CAPTCHA alternative.",
+    "description": "Privacy-friendly bot check that replaces CAPTCHAs with a snippet of code. Cloudflare describes it as free.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "security",
+      "captcha",
+      "forms",
+      "bot-protection"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.cloudflare.com/application-services/products/turnstile/",
+    "docs": "https://developers.cloudflare.com/turnstile/",
+    "pricingUrl": null,
+    "freeType": "fully-free",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "bot-protection"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free plan limits (widgets, requests) not stated on the product page."
+    ],
+    "pros": [
+      "No puzzles for users"
+    ],
+    "cons": [
+      "Limits unverified here"
+    ],
+    "alternatives": [],
+    "status": "needs-review",
+    "notes": "Plan limits are in Cloudflare docs, not captured in this verification.",
+    "sources": [
+      {
+        "label": "Cloudflare Turnstile",
+        "url": "https://www.cloudflare.com/application-services/products/turnstile/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "lastVerified": "2026-11-24"
   }
 ]
