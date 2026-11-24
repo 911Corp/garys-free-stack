@@ -10,4 +10,4 @@
 - **Report / suggest buttons** open GitHub issues on `911Corp/garys-free-stack`: they work once that repo exists.
 - **Storage**: favorites and stacks live in the browser (localStorage). Clearing site data deletes them; use JSON export.
 - **Link checker**: some sites (Unsplash, CoinGecko, Phaser) refuse bots with 401/403: those need a human look, not a fix.
-- **Bundle**: main JS ~108 kB gzipped; the API directory loads on demand (~138 kB gzipped).
+- **Bundle**: main JS ~137 kB gzipped; the API directory loads on demand (~134 kB gzipped).

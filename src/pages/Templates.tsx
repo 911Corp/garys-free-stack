@@ -17,7 +17,7 @@ export default function Templates() {
         {templates.map((t) => (
           <Link key={t.id} to={`/stacks/${t.id}`} className="panel tpl-card">
             <div className="price">$0</div>
-            <h3>{t.name.replace('$0 ', '')}</h3>
+            <h2>{t.name.replace('$0 ', '')}</h2>
             <p className="small ink2">{t.pitch}</p>
             <p className="small muted mono">{Object.values(t.slots).flat().map((id) => byId.get(id!)?.name).filter(Boolean).slice(0, 5).join(' · ')}</p>
           </Link>

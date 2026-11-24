@@ -26,7 +26,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [saved, setSaved] = useState<SavedStack[]>(() => load('stacks', []));
   const [history, setHist] = useState<string[]>(() => load('history', []));
   const [msg, setMsg] = useState<string | null>(null);
-  const timer = useRef<number>();
+  const timer = useRef<number | undefined>(undefined);
   useEffect(() => save('favorites', favorites), [favorites]);
   useEffect(() => save('compare', compare), [compare]);
   useEffect(() => save('stacks', saved), [saved]);

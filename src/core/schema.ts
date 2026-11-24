@@ -107,7 +107,7 @@ export const TemplateSchema = z.object({
   name: z.string(),
   pitch: z.string(),
   keywords: z.array(z.string()),
-  slots: z.record(z.enum(ROLES), z.array(z.string())),
+  slots: z.partialRecord(z.enum(ROLES), z.array(z.string())),
   conditions: z.array(z.string()),
   limits: z.array(z.string()),
   indirectCosts: z.array(z.string()),

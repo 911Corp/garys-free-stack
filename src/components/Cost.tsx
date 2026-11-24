@@ -28,7 +28,7 @@ export function Receipt({ cost, title = 'RECEIPT' }: { cost: StackCost; title?: 
   return (
     <div className="stack-y">
       <div className="receipt" aria-label="Estimated monthly cost">
-        <h3>{title}</h3>
+        <h2 style={{ fontSize: "1.02rem", textAlign: "center", letterSpacing: "0.1em", marginBottom: 2 }}>{title}</h2>
         <div className="center small">gary's free stack · monthly estimate</div>
         <div className="rule" />
         {cost.rows.length === 0 && <div className="center">nothing selected</div>}

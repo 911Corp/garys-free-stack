@@ -43,7 +43,7 @@ export default function Explore() {
       </div>
       <form role="search" className="search-big" onSubmit={(e) => e.preventDefault()}>
         <label className="sr-only" htmlFor="q">Search</label>
-        <input id="q" type="search" autoFocus placeholder="search name, tag, license..." value={f.q} onChange={(e) => { set({ q: e.target.value }); setParams(e.target.value ? { q: e.target.value } : {}, { replace: true }); }} />
+        <input id="q" type="search" placeholder="search name, tag, license..." value={f.q} onChange={(e) => { set({ q: e.target.value }); setParams(e.target.value ? { q: e.target.value } : {}, { replace: true }); }} />
       </form>
       <div className="explore">
         <aside className={`filters ${open ? 'open' : ''}`} aria-label="Filters">
@@ -77,7 +77,7 @@ export default function Explore() {
           </fieldset>
           <fieldset>
             <legend className="label">last verification</legend>
-            <select value={f.maxAgeDays ?? ''} onChange={(e) => set({ maxAgeDays: e.target.value ? Number(e.target.value) : null })}>
+            <select aria-label="Last verification" value={f.maxAgeDays ?? ''} onChange={(e) => set({ maxAgeDays: e.target.value ? Number(e.target.value) : null })}>
               <option value="">any time</option><option value="30">last 30 days</option><option value="90">last 90 days</option><option value="180">last 180 days</option>
             </select>
           </fieldset>

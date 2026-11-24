@@ -4569,7 +4569,7 @@
       "noCard": true,
       "noAccount": true,
       "commercialUse": null,
-      "openSource": true,
+      "openSource": null,
       "selfHostable": false,
       "localFirst": false,
       "potentialHostingCosts": false,
@@ -4646,7 +4646,8 @@
       "requires": []
     },
     "restrictions": [
-      "Demo plan quotas and attribution rules not captured: pricing page could not be fetched during verification."
+      "The API page presents the Public API as recommended for hobbyists, not for production or commercial use.",
+      "Free plan quotas and attribution rules not captured: the pricing page could not be fetched during verification."
     ],
     "pros": [
       "Broad coverage"
@@ -4660,6 +4661,11 @@
       {
         "label": "CoinGecko API docs",
         "url": "https://docs.coingecko.com/reference/introduction",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "CoinGecko API page",
+        "url": "https://www.coingecko.com/en/api",
         "checkedAt": "2026-11-24"
       }
     ],

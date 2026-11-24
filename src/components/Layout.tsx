@@ -19,7 +19,7 @@ export function Layout({ children }: { children: ReactNode }) {
   useEffect(() => { setOpen(false); window.scrollTo(0, 0); }, [loc.pathname]);
   return (
     <>
-      <a href="#main" className="skip">Skip to content</a>
+      <a href="#main" className="skip" onClick={(e) => { e.preventDefault(); const m = document.getElementById('main'); m?.focus(); m?.scrollIntoView(); }}>Skip to content</a>
       <header className="topbar">
         <div className="wrap">
           <Link to="/" className="brand" aria-label="Gary's Free Stack home">
@@ -32,7 +32,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </nav>
         </div>
       </header>
-      <main id="main" className="wrap">{children}</main>
+      <main id="main" className="wrap" tabIndex={-1}>{children}</main>
       <CompareDock />
       <footer>
         <div className="wrap">

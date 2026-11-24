@@ -45,7 +45,7 @@ docs/                 study, schema, sources, compatibility, cost simulator, dep
 - [Data schema](docs/data-schema.md) · [Sources](docs/sources.md)
 - [Compatibility engine](docs/compatibility.md) · [Cost simulator](docs/cost-simulator.md)
 - [Deployment](docs/deployment.md) · [Roadmap](docs/roadmap.md) · [Known limitations](docs/limitations.md)
-- [Changelog](CHANGELOG.md)
+- [Pre-launch audit](docs/audit-2026-11-24.md) · [Changelog](CHANGELOG.md)
 
 ## License
 Code MIT. Catalog data CC BY 4.0. Imported public-apis data MIT (upstream).

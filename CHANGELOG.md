@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 (2026-11-24)
+Pre-launch audit, see `docs/audit-2026-11-24.md`.
+- Dependencies upgraded (React 19, React Router 7, Zod 4, Vite 8, Vitest 5): 0 known vulnerabilities.
+- Fixed builder input lag, hidden import on empty builder, skip link 404, simulator duplicates, Sentry metric, importer format change (2,493 APIs).
+- Accessibility: 0 axe violations on all routes, desktop and mobile. No horizontal overflow at 390 px.
+- Data: 7 duplicate caveats removed, OSM and CoinGecko entries corrected, 207 links checked.
+
 ## 0.1.0 (2026-11-24)
 First usable version. Not deployed.
 

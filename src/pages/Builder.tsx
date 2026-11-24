@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { byId, pricingById, resources, ROLE_META, rules, templates } from '../core/catalog';
 import { ROLES } from '../core/constants';
@@ -20,8 +20,13 @@ const byRole = Object.fromEntries(ROLES.map((r) => [r, resources.filter((x) => x
 
 export default function Builder() {
   const [params, setParams] = useSearchParams();
-  const stack = useMemo(() => decodeStack(params.toString(), known), [params]);
-  const setStack = (s: Stack) => setParams(encodeStack(s), { replace: true });
+  // Local state is the source of truth (instant, no transition lag while typing); the URL mirrors it for sharing.
+  const [stack, setStackState] = useState<Stack>(() => decodeStack(params.toString(), known));
+  const setStack = (s: Stack) => { setStackState(s); setParams(encodeStack(s), { replace: true }); };
+  useEffect(() => {
+    const fromUrl = decodeStack(params.toString(), known);
+    if (encodeStack(fromUrl) !== encodeStack(stack)) setStackState(fromUrl);
+  }, [params]); // eslint-disable-line react-hooks/exhaustive-deps
   const [usage, setUsageState] = useState<Usage>(() => load('usage', defaultUsage()));
   const setUsage = (u: Usage) => { setUsageState(u); save('usage', u); };
   const [showUsage, setShowUsage] = useState(false);
@@ -59,7 +64,7 @@ export default function Builder() {
   return (
     <div className="stack-y">
       <div className="row between">
-        <div><p className="label">stack builder</p>
+        <div><h1 className="label" style={{ fontSize: '0.72rem', margin: 0 }}>stack builder</h1>
           <label className="sr-only" htmlFor="sname">Stack name</label>
           <input id="sname" type="text" value={stack.name} maxLength={80} onChange={(e) => setStack({ ...stack, name: e.target.value })} style={{ font: '700 1.5rem var(--mono)', background: 'transparent', border: 0, borderBottom: '1px dashed var(--line-2)', padding: '2px 0', borderRadius: 0 }} />
         </div>
@@ -100,7 +105,11 @@ export default function Builder() {
         </div>
 
         <aside className="sticky-side stack-y" id="receipt">
-          {ids.length === 0 ? <Voice line={pick('emptyStack', 1)} /> : <>
+          <input ref={fileRef} type="file" accept="application/json,.json" hidden aria-label="Import stack JSON" onChange={(e) => { if (e.target.files?.[0]) onImport(e.target.files[0]); e.target.value = ''; }} />
+          {ids.length === 0 ? <>
+            <Voice line={pick('emptyStack', 1)} />
+            <div className="row"><button className="btn small ghost" onClick={() => fileRef.current?.click()}>import .json</button></div>
+          </> : <>
             <Receipt cost={cost} />
             <button className="btn small ghost" aria-expanded={showUsage} onClick={() => setShowUsage((s) => !s)}>{showUsage ? 'hide' : 'tune'} usage profile</button>
             {showUsage && <div className="panel tight"><UsageForm usage={usage} onChange={setUsage} /></div>}
@@ -113,7 +122,6 @@ export default function Builder() {
               <button className="btn small ghost" onClick={() => download('stack.md', stackToMarkdown(stack, byId, findings, cost, shareUrl), 'text/markdown')}>.md</button>
               <button className="btn small ghost" onClick={() => download('stack.json', stackToJson(stack), 'application/json')}>.json</button>
               <button className="btn small ghost" onClick={() => fileRef.current?.click()}>import .json</button>
-              <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => e.target.files?.[0] && onImport(e.target.files[0])} />
             </div>
           </>}
         </aside>

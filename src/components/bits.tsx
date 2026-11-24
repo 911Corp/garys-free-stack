@@ -69,7 +69,7 @@ export function ResourceCard({ r }: { r: Resource }) {
       <div className="head">
         <MonoLogo r={r} />
         <div>
-          <h3><Link to={`/r/${r.id}`}>{r.name}</Link></h3>
+          <h2 className="card-title"><Link to={`/r/${r.id}`}>{r.name}</Link></h2>
           <p className="tag">{r.tagline}</p>
         </div>
       </div>
@@ -90,5 +90,5 @@ export function ResourceCard({ r }: { r: Resource }) {
 export function CompareDock() {
   const { compare } = useApp();
   if (compare.length < 2) return null;
-  return <Link className="btn primary compare-dock" to={`/compare?ids=${compare.join(',')}`}>compare {compare.length} →</Link>;
+  return <aside aria-label="Comparison tray"><Link className="btn primary compare-dock" to={`/compare?ids=${compare.join(',')}`}>compare {compare.length} →</Link></aside>;
 }

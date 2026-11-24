@@ -70,7 +70,7 @@ export default function Home() {
           {templates.slice(0, 8).map((t) => (
             <Link key={t.id} to={`/stacks/${t.id}`} className="panel tpl-card">
               <div className="price">$0</div>
-              <h3>{t.name.replace('$0 ', '')}</h3>
+              <h2>{t.name.replace('$0 ', '')}</h2>
               <p className="small ink2">{t.pitch}</p>
             </Link>
           ))}

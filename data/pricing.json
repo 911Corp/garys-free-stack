@@ -158,10 +158,7 @@
     "onExceed": "pause",
     "nextPlan": null,
     "overage": [],
-    "caveats": [
-      "Spin-down after 15 minutes without inbound traffic.",
-      "Free Postgres expires 30 days after creation."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "Render free docs",
@@ -196,9 +193,7 @@
       "note": "minimum charge per account"
     },
     "overage": [],
-    "caveats": [
-      "10 ms CPU per invocation on Free."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "Workers pricing",
@@ -332,9 +327,7 @@
       "usdPerMonth": 25
     },
     "overage": [],
-    "caveats": [
-      "Paused after 1 week of inactivity."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "Supabase pricing",
@@ -402,9 +395,7 @@
         "requiresPlan": "Launch"
       }
     ],
-    "caveats": [
-      "Scales to zero after 5 minutes idle."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "Neon pricing",
@@ -475,9 +466,7 @@
       "note": "page also lists M5 $25/mo and Flex up to $30/mo"
     },
     "overage": [],
-    "caveats": [
-      "Up to 100 operations per second."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "MongoDB pricing",
@@ -534,9 +523,7 @@
       "note": "pay as you go"
     },
     "overage": [],
-    "caveats": [
-      "No Cloud Functions or Cloud Storage on Spark."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "Firebase pricing",
@@ -923,9 +910,7 @@
       "usdPerMonth": 20
     },
     "overage": [],
-    "caveats": [
-      "Sunset announced for April 2027."
-    ],
+    "caveats": [],
     "sources": [
       {
         "label": "Deno Deploy pricing",

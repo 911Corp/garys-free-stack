@@ -22,12 +22,12 @@ export default function Simulator() {
       <h1>Cost simulator</h1>
       <p className="ink2 prose">Move the sliders to your expected usage. Free Stack compares it to the documented quotas and tells you which one breaks first. Costs are only computed from published prices; anything else stays unknown.</p>
       <div className="row">
-        <select value="" onChange={(e) => { const t = templates.find((x) => x.id === e.target.value); const s = saved.find((x) => x.id === e.target.value); if (t) setList(Object.values(t.slots).flat() as string[]); if (s) setList(Object.values(s.stack.slots).flat() as string[]); }} style={{ width: 'auto' }}>
+        <select aria-label="Load a stack" value="" onChange={(e) => { const t = templates.find((x) => x.id === e.target.value); const s = saved.find((x) => x.id === e.target.value); if (t) setList(Object.values(t.slots).flat() as string[]); if (s) setList(Object.values(s.stack.slots).flat() as string[]); }} style={{ width: 'auto' }}>
           <option value="">load a stack...</option>
           <optgroup label="templates">{templates.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}</optgroup>
           {saved.length > 0 && <optgroup label="saved">{saved.map((s) => <option key={s.id} value={s.id}>{s.stack.name}</option>)}</optgroup>}
         </select>
-        <select value="" onChange={(e) => e.target.value && setList([...ids, e.target.value])} style={{ width: 'auto' }}>
+        <select aria-label="Add a service" value="" onChange={(e) => e.target.value && setList([...ids, e.target.value])} style={{ width: 'auto' }}>
           <option value="">+ add a service with quotas...</option>
           {priced.filter((r) => !ids.includes(r.id)).map((r) => <option key={r.id} value={r.id}>{r.name}</option>)}
         </select>
