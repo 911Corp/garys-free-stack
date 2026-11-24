@@ -13,9 +13,7 @@ Not used as sources: blog posts, aggregators, AI answers, free-for.dev content (
 Terms respected: link checks send a clear User-Agent, 4 parallel requests max, HEAD first. No scraping of pages that forbid it; pricing change detection is a human review of flagged pages.
 
 ## Items marked Needs Review in v0.1
-- `groq`: the rate-limit table mixes Free and Developer labels.
-- `oracle-always-free`: landing page does not list Always Free capacities.
+- `groq`: the rate-limit table mixes Free and Developer labels (rechecked 2026-11-24, still ambiguous).
 - `open-webui`: custom license, needs full legal reading.
 - `coingecko-api`: pricing page unreachable during verification.
 - `cerebras`: free tier rate limits not visible on the pricing page.
-- `cloudflare-turnstile`: plan limits live in the docs, not captured yet.

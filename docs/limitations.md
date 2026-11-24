@@ -1,6 +1,6 @@
 # Known limitations (v0.1)
 
-- **Catalog size**: 135 resources (129 verified, 6 Needs Review). Open data and crypto/Web3 APIs are still thin: their pricing pages need a dedicated verification pass.
+- **Catalog size**: 148 resources (144 verified, 4 Needs Review). Still thin: open data, DefiLlama (docs do not state limits), CoinGecko (pricing page unreachable).
 - **Logos**: generated monograms, not official logos (avoids trademark and hotlinking issues).
 - **Unknowns**: many free tiers do not state card requirements or commercial terms on their pricing page; they show as unknown. That is honest, but it makes the "no card" and "commercial" filters strict.
 - **Rate limits**: Gemini free tier limits live on a separate page not captured yet; Groq table labels are ambiguous.

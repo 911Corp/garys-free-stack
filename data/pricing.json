@@ -1221,5 +1221,296 @@
         "checkedAt": "2026-11-24"
       }
     ]
+  },
+  {
+    "id": "oracle-always-free",
+    "plan": "Always Free",
+    "quotas": [
+      {
+        "metric": "bandwidth_gb",
+        "limit": 10000,
+        "period": "month",
+        "label": "10 TB outbound data per month"
+      },
+      {
+        "metric": "storage_gb",
+        "limit": 200,
+        "period": "total",
+        "label": "200 GB block volume storage"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "Ampere A1: 2 OCPUs and 12 GB memory total. Two AMD micro VMs with 1 GB each."
+    ],
+    "sources": [
+      {
+        "label": "Oracle Always Free resources",
+        "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "cloudflare-turnstile",
+    "plan": "Free",
+    "quotas": [],
+    "onExceed": "hard-cap",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "Unlimited challenges."
+    ],
+    "sources": [
+      {
+        "label": "Turnstile plans",
+        "url": "https://developers.cloudflare.com/turnstile/plans/",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "helius",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "credits",
+        "limit": 1000000,
+        "period": "month",
+        "label": "1M credits"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "10 RPC and 2 DAS requests per second."
+    ],
+    "sources": [
+      {
+        "label": "Helius pricing",
+        "url": "https://www.helius.dev/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "alchemy",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "credits",
+        "limit": 30000000,
+        "period": "month",
+        "label": "30M compute units"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "300 CU/s, about 15 requests per second."
+    ],
+    "sources": [
+      {
+        "label": "Alchemy pricing",
+        "url": "https://www.alchemy.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "quicknode",
+    "plan": "Free trial (1 month)",
+    "quotas": [
+      {
+        "metric": "credits",
+        "limit": 10000000,
+        "period": "total",
+        "label": "10M API credits for the 1-month trial"
+      }
+    ],
+    "onExceed": "hard-cap",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "QuickNode pricing",
+        "url": "https://www.quicknode.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "onExceedNote": "No overage during the trial."
+  },
+  {
+    "id": "etherscan-api",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "requests",
+        "limit": 100000,
+        "period": "day",
+        "label": "100,000 API calls per day"
+      }
+    ],
+    "onExceed": "throttled",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "3 calls per second."
+    ],
+    "sources": [
+      {
+        "label": "Etherscan API plans",
+        "url": "https://etherscan.io/apis",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "mapbox",
+    "plan": "Free allowances",
+    "quotas": [],
+    "onExceed": "billed",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "50,000 GL JS map loads, 200,000 static tiles, 100,000 temporary geocoding requests per month."
+    ],
+    "sources": [
+      {
+        "label": "Mapbox pricing",
+        "url": "https://www.mapbox.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "maptiler",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "requests",
+        "limit": 100000,
+        "period": "month",
+        "label": "100,000 API requests"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "5,000 map sessions per month."
+    ],
+    "sources": [
+      {
+        "label": "MapTiler pricing",
+        "url": "https://www.maptiler.com/cloud/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "stadia-maps",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "credits",
+        "limit": 200000,
+        "period": "month",
+        "label": "200,000 credits"
+      }
+    ],
+    "onExceed": "hard-cap",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "Stadia Maps pricing",
+        "url": "https://stadiamaps.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "onExceedNote": "No additional usage on Free."
+  },
+  {
+    "id": "gitlab-free",
+    "plan": "Free",
+    "quotas": [
+      {
+        "metric": "build_minutes",
+        "limit": 400,
+        "period": "month",
+        "label": "400 compute minutes"
+      },
+      {
+        "metric": "storage_gb",
+        "limit": 10,
+        "period": "total",
+        "label": "10 GiB per project"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "GitLab pricing",
+        "url": "https://about.gitlab.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "formspree",
+    "plan": "Free",
+    "quotas": [],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [
+      "50 form submissions per month."
+    ],
+    "sources": [
+      {
+        "label": "Formspree plans",
+        "url": "https://formspree.io/plans",
+        "checkedAt": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "id": "imagekit",
+    "plan": "Forever Free",
+    "quotas": [
+      {
+        "metric": "bandwidth_gb",
+        "limit": 20,
+        "period": "month",
+        "label": "20 GB bandwidth"
+      },
+      {
+        "metric": "storage_gb",
+        "limit": 3,
+        "period": "total",
+        "label": "3 GB storage"
+      }
+    ],
+    "onExceed": "unknown",
+    "nextPlan": null,
+    "overage": [],
+    "caveats": [],
+    "sources": [
+      {
+        "label": "ImageKit plans",
+        "url": "https://imagekit.io/plans/",
+        "checkedAt": "2026-11-24"
+      }
+    ]
   }
 ]

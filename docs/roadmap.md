@@ -14,8 +14,8 @@
 - [x] Cost simulator, exports (Markdown / JSON / CSV), share URL, X card
 
 ## Phase 3: Launch prep (next)
-- [x] 100 to 200 verified resources (135 in v0.2.0)
-- [ ] Resolve the 4 Needs Review items
+- [x] 100 to 200 verified resources (148 in v0.2.0)
+- [ ] Resolve the remaining Needs Review items (Groq, Open WebUI, CoinGecko, Cerebras)
 - [ ] Real repo + issue labels (`data-report`, `suggestion`) so report buttons work
 - [ ] Manual QA on iOS Safari / Android Chrome, accessibility pass (axe)
 - [ ] Decide launch, run the manual deploy workflow

@@ -790,5 +790,50 @@
       "Card verification at Oracle, or your own hardware."
     ],
     "jarvis": "Big Tech subscriptions: cancelled. Gary's weekends: also cancelled."
+  },
+  {
+    "id": "telegram-crypto-bot",
+    "name": "$0 Telegram Crypto Bot",
+    "pitch": "An always-on bot that watches Solana or EVM data and pings you on Telegram.",
+    "keywords": [
+      "telegram",
+      "crypto bot",
+      "solana",
+      "alerts",
+      "onchain",
+      "wallet",
+      "whale",
+      "sniper"
+    ],
+    "slots": {
+      "backend": [
+        "hono"
+      ],
+      "hosting": [
+        "oracle-always-free"
+      ],
+      "database": [
+        "turso"
+      ],
+      "extras": [
+        "telegram-bot-api",
+        "helius"
+      ],
+      "monitoring": [
+        "uptime-kuma"
+      ]
+    },
+    "conditions": [
+      "Helius Free: 1M credits per month, 10 RPC requests per second: cache and batch.",
+      "Telegram: about 1 message per second per chat.",
+      "Oracle requires a card for identity verification."
+    ],
+    "limits": [
+      "Public Solana RPC is not for production: use Helius or another provider."
+    ],
+    "indirectCosts": [
+      "Card verification at Oracle, or your own always-on machine."
+    ],
+    "jarvis": "Gary wanted a sniper. Jarvis built an alert bot. Not financial advice. Neither is Gary."
   }
 ]

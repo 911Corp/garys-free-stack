@@ -1069,7 +1069,7 @@
     "id": "oracle-always-free",
     "name": "Oracle Cloud Always Free",
     "tagline": "Always Free VMs (Arm and AMD), card required.",
-    "description": "Oracle Cloud offers Always Free compute (Arm Ampere A1 and AMD), block storage and more, plus a time-limited trial credit. Exact Always Free capacities are not shown on the landing page.",
+    "description": "Oracle Cloud offers Always Free compute (Arm Ampere A1 and AMD micro VMs), 200 GB of block storage and 10 TB of monthly outbound data, plus a separate time-limited trial credit.",
     "categories": [
       "infrastructure"
     ],
@@ -1108,8 +1108,8 @@
     },
     "restrictions": [
       "Credit or debit card required for identity verification (no prepaid or virtual cards).",
-      "US$300 trial credit for 30 days is separate from Always Free and only in select countries.",
-      "Exact Always Free quotas: see Oracle docs (not verified here)."
+      "Always Free: Ampere A1 equivalent to 2 OCPUs and 12 GB memory total, up to two AMD micro VMs (1/8 OCPU, 1 GB each), 200 GB block storage, 10 TB outbound data per month.",
+      "Always Free block volumes must be in the home region. The US$300 / 30-day trial credit is separate."
     ],
     "pros": [
       "Full VMs you control",
@@ -1123,16 +1123,20 @@
       "render",
       "coolify"
     ],
-    "status": "needs-review",
-    "notes": "Always Free quantities need verification against the Oracle Free Tier docs.",
     "sources": [
       {
         "label": "Oracle Cloud Free Tier",
         "url": "https://www.oracle.com/cloud/free/",
         "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Oracle Always Free resources docs",
+        "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+        "checkedAt": "2026-11-24"
       }
     ],
     "repo": null,
+    "status": "verified",
     "lastVerified": "2026-11-24"
   },
   {
@@ -7040,7 +7044,9 @@
     "pros": [],
     "cons": [],
     "alternatives": [],
-    "restrictions": [],
+    "restrictions": [
+      "Hosted ntfy.sh can be tried without sign-up; reserved topic names are a paid feature (Supporter plan $5/month)."
+    ],
     "sources": [
       {
         "label": "Apache-2.0 / GPL-2.0 license file (binwiederhier/ntfy)",
@@ -7049,7 +7055,7 @@
       }
     ],
     "gem": "curl -d \"deploy done\" ntfy.sh/your-topic and your phone buzzes. Gary uses it for price alerts. Obviously.",
-    "notes": "The hosted ntfy.sh service has its own plans, not verified here.",
+    "notes": "Free hosted quotas are not published on the home page.",
     "pricingUrl": null,
     "status": "verified",
     "lastVerified": "2026-11-24"
@@ -8359,7 +8365,7 @@
     ],
     "website": "https://www.cloudflare.com/application-services/products/turnstile/",
     "docs": "https://developers.cloudflare.com/turnstile/",
-    "pricingUrl": null,
+    "pricingUrl": "https://developers.cloudflare.com/turnstile/plans/",
     "freeType": "fully-free",
     "flags": {
       "noCard": null,
@@ -8380,25 +8386,887 @@
       "requires": []
     },
     "restrictions": [
-      "Free plan limits (widgets, requests) not stated on the product page."
+      "Free: up to 20 widgets, 10 hostnames per widget, unlimited challenges.",
+      "Cloudflare branding cannot be removed on Free.",
+      "Works without using other Cloudflare services."
     ],
     "pros": [
-      "No puzzles for users"
+      "No puzzles for users",
+      "Unlimited verifications"
     ],
     "cons": [
-      "Limits unverified here"
+      "Cloudflare branding"
     ],
     "alternatives": [],
-    "status": "needs-review",
-    "notes": "Plan limits are in Cloudflare docs, not captured in this verification.",
     "sources": [
       {
         "label": "Cloudflare Turnstile",
         "url": "https://www.cloudflare.com/application-services/products/turnstile/",
         "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Turnstile plans",
+        "url": "https://developers.cloudflare.com/turnstile/plans/",
+        "checkedAt": "2026-11-24"
       }
     ],
     "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "helius",
+    "name": "Helius (Free)",
+    "tagline": "Solana RPC and APIs, 1M credits per month free.",
+    "description": "Solana infrastructure provider: RPC, DAS API for NFTs and tokens, webhooks and enhanced transactions.",
+    "categories": [
+      "data-apis",
+      "infrastructure"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "solana",
+      "rpc",
+      "api"
+    ],
+    "roles": [
+      "extras",
+      "backend"
+    ],
+    "website": "https://www.helius.dev/",
+    "docs": "https://www.helius.dev/docs",
+    "pricingUrl": "https://www.helius.dev/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "solana-rpc",
+        "crypto-data"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free: 1M credits per month, 10 RPC requests/second, 2 DAS requests/second.",
+      "Webhooks on Free: not explicitly stated.",
+      "The sign-up section says no credit card or email is required, but not specifically for the Free plan."
+    ],
+    "pros": [
+      "Solana-native APIs"
+    ],
+    "cons": [
+      "Low DAS throughput on Free"
+    ],
+    "alternatives": [
+      "solana-public-rpc",
+      "alchemy",
+      "quicknode"
+    ],
+    "sources": [
+      {
+        "label": "Helius pricing",
+        "url": "https://www.helius.dev/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "alchemy",
+    "name": "Alchemy (Free)",
+    "tagline": "Multi-chain node API, 30M compute units per month.",
+    "description": "Blockchain developer platform with node APIs, enhanced APIs and webhooks across EVM chains and more.",
+    "categories": [
+      "data-apis",
+      "infrastructure"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "ethereum",
+      "evm",
+      "rpc",
+      "api"
+    ],
+    "roles": [
+      "extras",
+      "backend"
+    ],
+    "website": "https://www.alchemy.com/",
+    "docs": "https://www.alchemy.com/docs",
+    "pricingUrl": "https://www.alchemy.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "evm-rpc",
+        "crypto-data"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free: 30M compute units per month, 300 CU/s (about 15 requests/second), 5 apps and 5 webhooks."
+    ],
+    "pros": [
+      "Generous CU budget"
+    ],
+    "cons": [
+      "CU math depends on methods"
+    ],
+    "alternatives": [
+      "quicknode",
+      "helius",
+      "etherscan-api"
+    ],
+    "sources": [
+      {
+        "label": "Alchemy pricing",
+        "url": "https://www.alchemy.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "quicknode",
+    "name": "QuickNode (Free trial)",
+    "tagline": "Multi-chain RPC: 1-month trial, no card.",
+    "description": "Blockchain RPC and APIs for many chains. The free option is a one-month trial, not a permanent free plan.",
+    "categories": [
+      "data-apis",
+      "infrastructure"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "rpc",
+      "api"
+    ],
+    "roles": [
+      "extras",
+      "backend"
+    ],
+    "website": "https://www.quicknode.com/",
+    "docs": "https://www.quicknode.com/docs",
+    "pricingUrl": "https://www.quicknode.com/pricing",
+    "freeType": "free-trial",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "evm-rpc",
+        "solana-rpc",
+        "crypto-data"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free trial lasts 1 month: 10M API credits, no overage, 15 requests/second, 1 endpoint, all supported chains."
+    ],
+    "pros": [
+      "No card for the trial"
+    ],
+    "cons": [
+      "Trial, not a free plan"
+    ],
+    "alternatives": [
+      "alchemy",
+      "helius"
+    ],
+    "sources": [
+      {
+        "label": "QuickNode pricing",
+        "url": "https://www.quicknode.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "solana-public-rpc",
+    "name": "Solana public RPC",
+    "tagline": "Official public endpoint: fine for dev, not for production.",
+    "description": "Public RPC endpoints run for the Solana clusters. Free and keyless, but rate limited per IP and explicitly not meant for production apps.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "solana",
+      "rpc"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://solana.com/",
+    "docs": "https://solana.com/docs/references/clusters",
+    "pricingUrl": "https://solana.com/docs/references/clusters",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "solana-rpc"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Mainnet, per IP: 100 requests per 10 s, 40 per single method per 10 s, 40 concurrent connections, 100 MB per 30 s. Limits may change.",
+      "Not intended for production applications."
+    ],
+    "pros": [
+      "No key, no account"
+    ],
+    "cons": [
+      "Not for production"
+    ],
+    "alternatives": [
+      "helius",
+      "quicknode"
+    ],
+    "sources": [
+      {
+        "label": "Solana clusters docs",
+        "url": "https://solana.com/docs/references/clusters",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "etherscan-api",
+    "name": "Etherscan API (Free)",
+    "tagline": "EVM explorer data, 100k calls/day, personal use.",
+    "description": "Block explorer API for Ethereum and many EVM chains: balances, transactions, contracts, gas.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "ethereum",
+      "evm",
+      "explorer",
+      "api"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://etherscan.io/apis",
+    "docs": "https://docs.etherscan.io/",
+    "pricingUrl": "https://etherscan.io/apis",
+    "freeType": "non-commercial-only",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": false,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "crypto-data"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free plan is for personal and research use; commercial use requires the Advanced plan or higher.",
+      "3 calls/second, up to 100,000 calls/day, selected chains (about 90% coverage)."
+    ],
+    "pros": [
+      "Huge EVM coverage"
+    ],
+    "cons": [
+      "No commercial use on free"
+    ],
+    "alternatives": [
+      "alchemy"
+    ],
+    "sources": [
+      {
+        "label": "Etherscan API plans",
+        "url": "https://etherscan.io/apis",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "telegram-bot-api",
+    "name": "Telegram Bot API",
+    "tagline": "Build Telegram bots; messaging is free by default.",
+    "description": "HTTP API to build Telegram bots. Messaging users is free by default; only paid broadcasts above the free rate cost Stars.",
+    "categories": [
+      "data-apis",
+      "development"
+    ],
+    "tags": [
+      "bot",
+      "notifications",
+      "messaging",
+      "api"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://core.telegram.org/bots",
+    "docs": "https://core.telegram.org/bots/api",
+    "pricingUrl": "https://core.telegram.org/bots/faq",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "bot-api",
+        "notifications"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "About 1 message/second per chat, 20 messages/minute per group, about 30 messages/second for broadcasts.",
+      "Paid broadcasts (up to 1,000/s) cost 0.1 Stars per message beyond the free rate."
+    ],
+    "pros": [
+      "No hosting needed for the API itself"
+    ],
+    "cons": [
+      "Your bot code still needs a host"
+    ],
+    "alternatives": [
+      "ntfy"
+    ],
+    "gem": "Alerts to your phone through a Telegram bot, free. Gary gets a ping every time something gets rugged.",
+    "sources": [
+      {
+        "label": "Telegram Bots FAQ",
+        "url": "https://core.telegram.org/bots/faq",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "mapbox",
+    "name": "Mapbox (free allowances)",
+    "tagline": "Maps, geocoding and directions with monthly free usage.",
+    "description": "Mapping platform with vector maps, geocoding and routing APIs. Each product includes a monthly free allowance.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "maps",
+      "geolocation",
+      "geocoding",
+      "directions"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.mapbox.com/",
+    "docs": "https://docs.mapbox.com/",
+    "pricingUrl": "https://www.mapbox.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "map-tiles",
+        "geocoding",
+        "directions"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free each month: 50,000 GL JS map loads, 200,000 static tile requests, 100,000 temporary geocoding requests, 100,000 directions requests.",
+      "Permanent geocoding has no free tier."
+    ],
+    "pros": [
+      "Generous map loads"
+    ],
+    "cons": [
+      "Usage-based beyond free"
+    ],
+    "alternatives": [
+      "maptiler",
+      "stadia-maps",
+      "osm-tiles"
+    ],
+    "sources": [
+      {
+        "label": "Mapbox pricing",
+        "url": "https://www.mapbox.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "maptiler",
+    "name": "MapTiler Cloud (Free)",
+    "tagline": "Map tiles and APIs for prototypes, no card.",
+    "description": "Hosted vector maps, tiles and geocoding. The free plan targets testing, prototypes and non-commercial use.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "maps",
+      "tiles",
+      "geolocation"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.maptiler.com/",
+    "docs": "https://docs.maptiler.com/",
+    "pricingUrl": "https://www.maptiler.com/cloud/pricing/",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "map-tiles"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "5,000 map sessions and 100,000 API requests per month.",
+      "Described as suitable for testing, PoC, prototyping, personal or non-commercial use.",
+      "MapTiler logo shown on the map."
+    ],
+    "pros": [
+      "No credit card",
+      "Works with MapLibre"
+    ],
+    "cons": [
+      "Not meant for commercial use"
+    ],
+    "alternatives": [
+      "mapbox",
+      "stadia-maps"
+    ],
+    "sources": [
+      {
+        "label": "MapTiler pricing",
+        "url": "https://www.maptiler.com/cloud/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "stadia-maps",
+    "name": "Stadia Maps (Free)",
+    "tagline": "Map tiles, 200,000 credits per month, non-commercial.",
+    "description": "Map tiles, geocoding and routing on OpenStreetMap data, with a free plan for non-commercial projects.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "maps",
+      "tiles",
+      "geolocation",
+      "openstreetmap"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://stadiamaps.com/",
+    "docs": "https://docs.stadiamaps.com/",
+    "pricingUrl": "https://stadiamaps.com/pricing/",
+    "freeType": "non-commercial-only",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": false,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "map-tiles"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "200,000 credits per month, no additional usage; 1 credit per standard basemap tile, 4 per satellite tile.",
+      "Commercial use not allowed on Free."
+    ],
+    "pros": [
+      "OSM-based, clean styles"
+    ],
+    "cons": [
+      "Non-commercial only"
+    ],
+    "alternatives": [
+      "maptiler",
+      "mapbox"
+    ],
+    "sources": [
+      {
+        "label": "Stadia Maps pricing",
+        "url": "https://stadiamaps.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "pexels",
+    "name": "Pexels",
+    "tagline": "Free stock photos and videos, no attribution needed.",
+    "description": "Library of photos and videos free to use and modify, including in business contexts like shops and ads.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "images",
+      "video",
+      "stock-photos"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.pexels.com/",
+    "docs": "https://www.pexels.com/api/",
+    "pricingUrl": "https://www.pexels.com/license/",
+    "freeType": "fully-free",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Pexels License",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "images"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Not allowed: selling unaltered copies, reselling on other stock platforms, implying endorsement, using in a trademark, showing identifiable people negatively."
+    ],
+    "pros": [
+      "Photos and videos",
+      "Attribution optional"
+    ],
+    "cons": [
+      "Popular images are everywhere"
+    ],
+    "alternatives": [
+      "unsplash"
+    ],
+    "sources": [
+      {
+        "label": "Pexels license",
+        "url": "https://www.pexels.com/license/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "gitlab-free",
+    "name": "GitLab (Free)",
+    "tagline": "Git hosting with 400 CI minutes per month.",
+    "description": "Git hosting, issues, CI/CD and registry on GitLab.com. The Free tier includes monthly compute minutes and 10 GiB storage per project.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "git",
+      "ci-cd",
+      "code-hosting",
+      "devops"
+    ],
+    "roles": [
+      "automation",
+      "extras"
+    ],
+    "website": "https://about.gitlab.com/",
+    "docs": "https://docs.gitlab.com/",
+    "pricingUrl": "https://about.gitlab.com/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "git-hosting",
+        "ci"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "400 compute minutes per month, 10 GiB storage per project, 5 users per private top-level group.",
+      "No card for the plan, but a card is required to use GitLab.com shared runners (verified with a $1 authorization, not charged). Not needed with your own runner."
+    ],
+    "pros": [
+      "Full DevOps suite"
+    ],
+    "cons": [
+      "Card needed for shared runners"
+    ],
+    "alternatives": [
+      "github-actions",
+      "gitea"
+    ],
+    "sources": [
+      {
+        "label": "GitLab pricing",
+        "url": "https://about.gitlab.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "formspree",
+    "name": "Formspree (Free)",
+    "tagline": "Form backend for static sites, 50 submissions/month.",
+    "description": "Send HTML form submissions to your inbox without a server. The free plan is meant for testing and development.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "forms",
+      "static-site",
+      "email"
+    ],
+    "roles": [
+      "backend",
+      "extras"
+    ],
+    "website": "https://formspree.io/",
+    "docs": "https://help.formspree.io/",
+    "pricingUrl": "https://formspree.io/plans",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "forms"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "50 submissions per month, described as for testing and development.",
+      "Unlimited forms, basic spam filtering, custom reCAPTCHA."
+    ],
+    "pros": [
+      "Forms on a static host"
+    ],
+    "cons": [
+      "50 submissions is tiny"
+    ],
+    "alternatives": [
+      "netlify"
+    ],
+    "sources": [
+      {
+        "label": "Formspree plans",
+        "url": "https://formspree.io/plans",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "imagekit",
+    "name": "ImageKit (Forever Free)",
+    "tagline": "Image CDN and optimization, 20 GB bandwidth/month.",
+    "description": "Real-time image and video optimization with a CDN and media library.",
+    "categories": [
+      "design",
+      "infrastructure"
+    ],
+    "tags": [
+      "images",
+      "image-optimization",
+      "cdn",
+      "video"
+    ],
+    "roles": [
+      "storage",
+      "extras"
+    ],
+    "website": "https://imagekit.io/",
+    "docs": "https://imagekit.io/docs",
+    "pricingUrl": "https://imagekit.io/plans/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "image-optimization",
+        "cdn"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "20 GB bandwidth and 500 video units per month, 3 GB storage, 2 users, no custom domain.",
+      "Overage appears only on paid plans (free plan behaviour past the limit not stated)."
+    ],
+    "pros": [
+      "Generous bandwidth"
+    ],
+    "cons": [
+      "No custom domain"
+    ],
+    "alternatives": [
+      "cloudinary",
+      "squoosh"
+    ],
+    "sources": [
+      {
+        "label": "ImageKit plans",
+        "url": "https://imagekit.io/plans/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "license": null,
+    "repo": null,
+    "status": "verified",
     "lastVerified": "2026-11-24"
   }
 ]

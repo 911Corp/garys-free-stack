@@ -2,9 +2,12 @@
 
 ## 0.2.0 (2026-11-24)
 Catalog enrichment. Not deployed until validated.
-- 135 resources (was 71): 56 open source tools checked against their license files, 8 free tiers checked against official pricing pages.
+- 148 resources (was 71): 56 open source tools checked against their license files, 21 free tiers checked against official pricing pages.
+- Crypto and maps pass: Helius, Alchemy, QuickNode (trial), Solana public RPC, Etherscan API (non-commercial), Telegram Bot API, Mapbox, MapTiler, Stadia Maps, plus Pexels, GitLab, Formspree, ImageKit.
+- Oracle Always Free and Cloudflare Turnstile moved from Needs Review to Verified with exact figures. 3 new sourced rules (Solana public RPC in production, MapTiler commercial use, GitLab shared runners card).
+- New template: $0 Telegram Crypto Bot (20 templates total).
 - New coverage: backend frameworks and ORMs, docs generators, icons, fonts, animation, 2D/3D creative coding, media tools, self-hosted productivity (notes, passwords, photos, PDFs, sync), local AI (chat, image, OCR, TTS, OpenAI-compatible server), vibe coding (Continue, Cline, Aider, MCP servers), observability (PostHog, Grafana Cloud, Better Stack), storage (Backblaze B2, Cloudinary), vectors (Pinecone).
-- 19 stack templates (+ Docs Site, Local AI Studio, Vibe Coding Setup, Self-hosted Office). 21 hidden gems.
+- Stack templates: + Docs Site, Local AI Studio, Vibe Coding Setup, Self-hosted Office). 21 hidden gems.
 - Cerebras listed as Free Credits (one-time, card required), to show the trial/credits distinction in practice.
 - NocoDB flagged: license switched to the Sustainable Use License on 2026-01-29.
 

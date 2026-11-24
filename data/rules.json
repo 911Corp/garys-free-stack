@@ -192,5 +192,49 @@
       "label": "TryCloudflare docs",
       "url": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/"
     }
+  },
+  {
+    "id": "solana-public-rpc-prod",
+    "kind": "terms",
+    "description": "Solana public RPC endpoints are not intended for production applications.",
+    "when": {
+      "a": "solana-public-rpc",
+      "b": "@always-on"
+    },
+    "severity": "warn",
+    "message": "The Solana public RPC is rate limited per IP and not meant for production. Use a provider (Helius free tier, for example) for anything always-on.",
+    "source": {
+      "label": "Solana clusters docs",
+      "url": "https://solana.com/docs/references/clusters"
+    }
+  },
+  {
+    "id": "maptiler-commercial",
+    "kind": "terms",
+    "description": "MapTiler Free is described for testing, prototypes, personal or non-commercial use.",
+    "when": {
+      "a": "maptiler",
+      "b": "@commercial"
+    },
+    "severity": "warn",
+    "message": "MapTiler Free is meant for testing, prototypes, personal or non-commercial use. Plan a paid tier for a commercial launch.",
+    "source": {
+      "label": "MapTiler pricing",
+      "url": "https://www.maptiler.com/cloud/pricing/"
+    }
+  },
+  {
+    "id": "gitlab-shared-runners-card",
+    "kind": "terms",
+    "description": "GitLab.com shared runners require card verification.",
+    "when": {
+      "a": "gitlab-free"
+    },
+    "severity": "info",
+    "message": "Using GitLab.com shared runners requires card verification ($1 authorization, not charged). Your own runner avoids it.",
+    "source": {
+      "label": "GitLab pricing",
+      "url": "https://about.gitlab.com/pricing/"
+    }
   }
 ]
