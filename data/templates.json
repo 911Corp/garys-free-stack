@@ -1,0 +1,631 @@
+[
+  {
+    "id": "landing-page",
+    "name": "$0 Landing Page",
+    "pitch": "A fast static landing page with analytics and a contact flow.",
+    "keywords": [
+      "landing",
+      "marketing",
+      "waitlist",
+      "static",
+      "site",
+      "page"
+    ],
+    "slots": {
+      "frontend": [
+        "astro",
+        "tailwindcss"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "analytics": [
+        "cloudflare-web-analytics"
+      ],
+      "email": [
+        "brevo"
+      ]
+    },
+    "conditions": [
+      "Stay under 500 builds per month on Cloudflare Pages.",
+      "Brevo sends up to 300 emails per day after account approval."
+    ],
+    "limits": [
+      "No server code: forms go through Brevo or a third party."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "Static, fast, nothing to babysit. Gary wanted a blockchain. Jarvis said no."
+  },
+  {
+    "id": "saas-mvp",
+    "name": "$0 SaaS MVP",
+    "pitch": "Auth, Postgres, storage and a deployed frontend to validate a SaaS idea.",
+    "keywords": [
+      "saas",
+      "mvp",
+      "startup",
+      "subscription",
+      "dashboard",
+      "b2b"
+    ],
+    "slots": {
+      "frontend": [
+        "react",
+        "vite",
+        "tailwindcss",
+        "shadcn-ui"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "backend": [
+        "supabase"
+      ],
+      "database": [
+        "supabase"
+      ],
+      "auth": [
+        "supabase"
+      ],
+      "storage": [
+        "supabase"
+      ],
+      "email": [
+        "resend"
+      ],
+      "analytics": [
+        "umami"
+      ],
+      "monitoring": [
+        "sentry"
+      ]
+    },
+    "conditions": [
+      "Keep the database under 500 MB and auth under 50,000 MAU.",
+      "Visit or ping the project: free Supabase projects pause after 1 week of inactivity.",
+      "Resend: 100 emails per day."
+    ],
+    "limits": [
+      "Supabase Free: 2 active projects.",
+      "Sentry Developer: 1 user."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works.",
+      "Payments (Stripe etc.) take a fee per transaction: not part of this stack."
+    ],
+    "jarvis": "Validated idea first, paid plan later. Supabase Pro is $25/month when you outgrow it."
+  },
+  {
+    "id": "ai-app",
+    "name": "$0 AI App",
+    "pitch": "A web app calling a free LLM API through a tiny edge backend that hides your key.",
+    "keywords": [
+      "ai",
+      "llm",
+      "chatbot",
+      "gpt",
+      "assistant",
+      "generative"
+    ],
+    "slots": {
+      "frontend": [
+        "react",
+        "vite"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "backend": [
+        "cloudflare-workers"
+      ],
+      "ai": [
+        "groq",
+        "gemini-api"
+      ],
+      "database": [
+        "cloudflare-d1"
+      ],
+      "analytics": [
+        "cloudflare-web-analytics"
+      ]
+    },
+    "conditions": [
+      "Never call the LLM API from the browser: proxy through the Worker.",
+      "Groq free example: 1,000 requests/day per model.",
+      "Gemini free tier content is used to improve Google products: no sensitive data."
+    ],
+    "limits": [
+      "Workers Free: 100,000 requests/day, 10 ms CPU per call."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works.",
+      "Heavy users can burn a daily AI quota in minutes: add per-user rate limiting."
+    ],
+    "jarvis": "Two AI providers so one rate limit does not take you down. Jarvis calls this redundancy. Gary calls it free tier stacking."
+  },
+  {
+    "id": "ai-agent",
+    "name": "$0 AI Agent",
+    "pitch": "A self-hosted agent workflow with local models and automation.",
+    "keywords": [
+      "agent",
+      "agents",
+      "automation",
+      "workflow",
+      "rag",
+      "mcp",
+      "local ai"
+    ],
+    "slots": {
+      "ai": [
+        "ollama",
+        "chroma"
+      ],
+      "automation": [
+        "n8n"
+      ],
+      "hosting": [
+        "oracle-always-free"
+      ],
+      "frontend": [
+        "open-webui"
+      ]
+    },
+    "conditions": [
+      "Runs on hardware you control: your machine or an Always Free VM.",
+      "n8n Community is for internal or personal use (Sustainable Use License)."
+    ],
+    "limits": [
+      "Local model speed depends on RAM/CPU.",
+      "Oracle requires a card for verification."
+    ],
+    "indirectCosts": [
+      "Electricity and hardware if run at home.",
+      "Oracle card verification (no charge stated for Always Free)."
+    ],
+    "jarvis": "No API bill, no rate limit, no data leaving your box. Jarvis is moved. Slightly."
+  },
+  {
+    "id": "developer-portfolio",
+    "name": "$0 Developer Portfolio",
+    "pitch": "A personal site with a blog, deployed from GitHub.",
+    "keywords": [
+      "portfolio",
+      "personal",
+      "blog",
+      "resume",
+      "cv"
+    ],
+    "slots": {
+      "frontend": [
+        "astro",
+        "tailwindcss"
+      ],
+      "hosting": [
+        "github-pages"
+      ],
+      "analytics": [
+        "goatcounter"
+      ],
+      "automation": [
+        "github-actions"
+      ]
+    },
+    "conditions": [
+      "Public repository required for free GitHub Pages.",
+      "Personal, non-business site."
+    ],
+    "limits": [
+      "100 GB/month soft bandwidth."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "The classic. Gary's portfolio has 47 unfinished projects. Free hosting does not judge."
+  },
+  {
+    "id": "indie-game",
+    "name": "$0 Indie Game",
+    "pitch": "A 2D browser game shipped as static files.",
+    "keywords": [
+      "game",
+      "gamedev",
+      "arcade",
+      "browser game",
+      "jam"
+    ],
+    "slots": {
+      "frontend": [
+        "phaser",
+        "vite"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "analytics": [
+        "goatcounter"
+      ],
+      "database": [
+        "supabase"
+      ]
+    },
+    "conditions": [
+      "Leaderboards via Supabase: keep under 500 MB and wake the project weekly.",
+      "Assets count toward bandwidth on other hosts; Cloudflare Pages advertises unlimited bandwidth."
+    ],
+    "limits": [
+      "No server-side anti-cheat at this level."
+    ],
+    "indirectCosts": [
+      "Optional: game asset packs, music licenses."
+    ],
+    "jarvis": "Gary insists his runner game is \"basically Elden Ring\". Ship it anyway."
+  },
+  {
+    "id": "crypto-dashboard",
+    "name": "$0 Crypto Dashboard",
+    "pitch": "Live market data with caching at the edge.",
+    "keywords": [
+      "crypto",
+      "web3",
+      "defi",
+      "token",
+      "prices",
+      "dashboard",
+      "blockchain"
+    ],
+    "slots": {
+      "frontend": [
+        "react",
+        "vite"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "backend": [
+        "cloudflare-workers"
+      ],
+      "database": [
+        "upstash-redis"
+      ],
+      "extras": [
+        "coingecko-api"
+      ]
+    },
+    "conditions": [
+      "Cache API responses in Redis to stay inside the CoinGecko demo limits and Upstash 500K commands.",
+      "CoinGecko demo quotas are unverified here: check them before launch."
+    ],
+    "limits": [
+      "Not financial advice. Neither is Gary."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "Prices go down, your infra bill stays at $0. Something has to be stable."
+  },
+  {
+    "id": "analytics-dashboard",
+    "name": "$0 Analytics Dashboard",
+    "pitch": "Internal metrics dashboard on serverless Postgres.",
+    "keywords": [
+      "analytics",
+      "metrics",
+      "kpi",
+      "internal tool",
+      "admin",
+      "charts"
+    ],
+    "slots": {
+      "frontend": [
+        "react",
+        "vite",
+        "shadcn-ui"
+      ],
+      "hosting": [
+        "netlify"
+      ],
+      "database": [
+        "neon"
+      ],
+      "auth": [
+        "clerk"
+      ],
+      "automation": [
+        "github-actions"
+      ]
+    },
+    "conditions": [
+      "Neon: 100 CU-hours and 1 GB per project.",
+      "Netlify: 300 credits/month, all projects pause if one exceeds.",
+      "GitHub Actions cron to refresh data (free on public repos)."
+    ],
+    "limits": [
+      "Clerk branding stays on Hobby."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "Dashboards about dashboards. Jarvis approves because the numbers are real."
+  },
+  {
+    "id": "ecommerce-prototype",
+    "name": "$0 E-commerce Prototype",
+    "pitch": "A storefront prototype to test demand before paying for a commerce platform.",
+    "keywords": [
+      "ecommerce",
+      "shop",
+      "store",
+      "products",
+      "cart"
+    ],
+    "slots": {
+      "frontend": [
+        "astro",
+        "tailwindcss"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "database": [
+        "turso"
+      ],
+      "backend": [
+        "cloudflare-workers"
+      ],
+      "email": [
+        "resend"
+      ]
+    },
+    "conditions": [
+      "Prototype only: payment processing is not free and not included.",
+      "Avoid GitHub Pages: it forbids e-commerce on free hosting."
+    ],
+    "limits": [
+      "No payment provider in this stack."
+    ],
+    "indirectCosts": [
+      "Payment fees per transaction.",
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "A shop that sells nothing yet costs nothing. Perfectly balanced."
+  },
+  {
+    "id": "automation-stack",
+    "name": "$0 Automation Stack",
+    "pitch": "Scheduled jobs, workflows and alerts.",
+    "keywords": [
+      "automation",
+      "cron",
+      "scheduled",
+      "scraper",
+      "workflow",
+      "bot",
+      "alerts"
+    ],
+    "slots": {
+      "automation": [
+        "github-actions",
+        "n8n"
+      ],
+      "hosting": [
+        "oracle-always-free"
+      ],
+      "monitoring": [
+        "uptimerobot"
+      ],
+      "email": [
+        "brevo"
+      ]
+    },
+    "conditions": [
+      "Public repo for unlimited standard Actions minutes, or 2,000 min/month on private.",
+      "n8n: internal or personal use."
+    ],
+    "limits": [
+      "Oracle requires a card for verification."
+    ],
+    "indirectCosts": [
+      "None beyond your time."
+    ],
+    "jarvis": "Robots doing chores for $0. Gary finally automated his GM tweets."
+  },
+  {
+    "id": "local-first-app",
+    "name": "$0 Local-first App",
+    "pitch": "Data lives on the user's device; sync is optional.",
+    "keywords": [
+      "local-first",
+      "offline",
+      "privacy",
+      "desktop",
+      "pwa"
+    ],
+    "slots": {
+      "frontend": [
+        "svelte",
+        "vite"
+      ],
+      "hosting": [
+        "github-pages"
+      ],
+      "database": [
+        "pocketbase"
+      ],
+      "ai": [
+        "ollama"
+      ]
+    },
+    "conditions": [
+      "Ship the app as static files; optional sync through a PocketBase you host.",
+      "GitHub Pages for non-commercial projects only."
+    ],
+    "limits": [
+      "Sync server must run somewhere if you need it."
+    ],
+    "indirectCosts": [
+      "Optional VPS for sync."
+    ],
+    "jarvis": "Your data, your device, your problem. Jarvis likes all three."
+  },
+  {
+    "id": "self-hosted-stack",
+    "name": "$0 Self-hosted Stack",
+    "pitch": "Your own mini cloud on an always-free VM.",
+    "keywords": [
+      "self-hosted",
+      "homelab",
+      "vps",
+      "docker",
+      "privacy"
+    ],
+    "slots": {
+      "hosting": [
+        "oracle-always-free",
+        "coolify"
+      ],
+      "backend": [
+        "pocketbase"
+      ],
+      "analytics": [
+        "umami"
+      ],
+      "monitoring": [
+        "uptime-kuma"
+      ],
+      "extras": [
+        "cloudflare-tunnel"
+      ]
+    },
+    "conditions": [
+      "You maintain updates and backups.",
+      "Monitor from a second location: a monitor on the same VM cannot see the VM die."
+    ],
+    "limits": [
+      "Always Free capacities not verified here."
+    ],
+    "indirectCosts": [
+      "Card verification at Oracle.",
+      "Your time."
+    ],
+    "jarvis": "Gary is now a sysadmin. Pray for Gary."
+  },
+  {
+    "id": "api-backend",
+    "name": "$0 API Backend",
+    "pitch": "A REST/JSON API with a SQL database and monitoring.",
+    "keywords": [
+      "api",
+      "backend",
+      "rest",
+      "json",
+      "microservice"
+    ],
+    "slots": {
+      "backend": [
+        "cloudflare-workers"
+      ],
+      "database": [
+        "cloudflare-d1"
+      ],
+      "monitoring": [
+        "sentry",
+        "uptimerobot"
+      ],
+      "automation": [
+        "github-actions"
+      ]
+    },
+    "conditions": [
+      "100,000 requests/day, 10 ms CPU each on Workers Free.",
+      "D1: 5M rows read/day."
+    ],
+    "limits": [
+      "Edge runtime is not full Node.js."
+    ],
+    "indirectCosts": [
+      "A custom domain is optional and not free. A free subdomain from the host works."
+    ],
+    "jarvis": "Fast, cheap, global. Two out of three is usually the deal. Here it is three."
+  },
+  {
+    "id": "discord-bot",
+    "name": "$0 Discord Bot",
+    "pitch": "A Node.js Discord bot that stays online.",
+    "keywords": [
+      "discord",
+      "bot",
+      "community",
+      "server"
+    ],
+    "slots": {
+      "backend": [
+        "discord-js"
+      ],
+      "hosting": [
+        "oracle-always-free"
+      ],
+      "database": [
+        "turso"
+      ],
+      "monitoring": [
+        "uptime-kuma"
+      ]
+    },
+    "conditions": [
+      "Gateway bots need an always-on process: avoid hosts that sleep."
+    ],
+    "limits": [
+      "Oracle requires a card for verification."
+    ],
+    "indirectCosts": [
+      "None stated."
+    ],
+    "jarvis": "Gary's bot says GM to everyone. Every. Single. Message."
+  },
+  {
+    "id": "productivity-app",
+    "name": "$0 Personal Productivity App",
+    "pitch": "A private notes and tasks app with sync and AI help.",
+    "keywords": [
+      "productivity",
+      "notes",
+      "tasks",
+      "todo",
+      "personal"
+    ],
+    "slots": {
+      "frontend": [
+        "react",
+        "vite"
+      ],
+      "hosting": [
+        "cloudflare-pages"
+      ],
+      "backend": [
+        "pocketbase"
+      ],
+      "database": [
+        "pocketbase"
+      ],
+      "auth": [
+        "pocketbase"
+      ],
+      "ai": [
+        "ollama"
+      ]
+    },
+    "conditions": [
+      "PocketBase needs a host for sync (your machine plus a tunnel, or a VM)."
+    ],
+    "limits": [
+      "Single-user focus."
+    ],
+    "indirectCosts": [
+      "Optional VPS."
+    ],
+    "jarvis": "Gary will use it for two weeks. Jarvis will use it forever."
+  }
+]

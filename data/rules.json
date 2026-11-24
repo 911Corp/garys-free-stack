@@ -1,0 +1,196 @@
+[
+  {
+    "id": "gh-pages-commercial",
+    "kind": "terms",
+    "description": "GitHub Pages forbids running an online business, e-commerce or commercial SaaS on free hosting.",
+    "when": {
+      "a": "github-pages",
+      "b": "@commercial"
+    },
+    "severity": "error",
+    "message": "GitHub Pages is not allowed as free hosting for an online business or commercial SaaS. Pick another host for a commercial project.",
+    "source": {
+      "label": "GitHub Pages limits",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+    }
+  },
+  {
+    "id": "render-discord-spin-down",
+    "kind": "conflict",
+    "description": "Render free web services spin down after 15 minutes without inbound traffic; a Discord gateway bot needs a persistent process.",
+    "when": {
+      "a": "render",
+      "b": "discord-js"
+    },
+    "severity": "warn",
+    "message": "Render free instances sleep after 15 minutes without inbound HTTP traffic. A gateway bot would go offline. Use an always-on host (VPS, self-hosting).",
+    "source": {
+      "label": "Render free docs",
+      "url": "https://render.com/docs/free"
+    }
+  },
+  {
+    "id": "firebase-no-functions",
+    "kind": "conflict",
+    "description": "Cloud Functions are not available on the Spark plan.",
+    "when": {
+      "a": "firebase",
+      "b": "@needs-server"
+    },
+    "severity": "warn",
+    "message": "Firebase Spark has no Cloud Functions. Server code must run elsewhere (Workers, Render, Netlify functions).",
+    "source": {
+      "label": "Firebase pricing",
+      "url": "https://firebase.google.com/pricing"
+    }
+  },
+  {
+    "id": "gemini-sensitive",
+    "kind": "terms",
+    "description": "Gemini API free tier content is used to improve Google products.",
+    "when": {
+      "a": "gemini-api",
+      "b": "@sensitive"
+    },
+    "severity": "error",
+    "message": "On the Gemini free tier, content is used to improve Google products. Do not send sensitive or personal data; use a paid tier or a local model.",
+    "source": {
+      "label": "Gemini API pricing",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing"
+    }
+  },
+  {
+    "id": "n8n-sul",
+    "kind": "terms",
+    "description": "n8n Sustainable Use License limits use to internal business or non-commercial purposes.",
+    "when": {
+      "a": "n8n",
+      "b": "@commercial"
+    },
+    "severity": "warn",
+    "message": "n8n Community is fine for your own internal workflows, but you may not offer n8n itself to others as a commercial service.",
+    "source": {
+      "label": "n8n LICENSE.md",
+      "url": "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+    }
+  },
+  {
+    "id": "tailscale-noncommercial",
+    "kind": "terms",
+    "description": "Tailscale Personal is for non-commercial use.",
+    "when": {
+      "a": "tailscale",
+      "b": "@commercial"
+    },
+    "severity": "error",
+    "message": "Tailscale Personal is only for non-commercial use.",
+    "source": {
+      "label": "Tailscale pricing",
+      "url": "https://tailscale.com/pricing"
+    }
+  },
+  {
+    "id": "open-meteo-noncommercial",
+    "kind": "terms",
+    "description": "Open-Meteo free tier is non-commercial.",
+    "when": {
+      "a": "open-meteo",
+      "b": "@commercial"
+    },
+    "severity": "error",
+    "message": "Open-Meteo free tier does not allow commercial use.",
+    "source": {
+      "label": "Open-Meteo pricing",
+      "url": "https://open-meteo.com/en/pricing"
+    }
+  },
+  {
+    "id": "supabase-clerk-overlap",
+    "kind": "overlap",
+    "description": "Supabase already includes Auth (50,000 MAU on Free).",
+    "when": {
+      "a": "supabase",
+      "b": "clerk"
+    },
+    "severity": "info",
+    "message": "Supabase already ships Auth with 50,000 MAU on Free. Clerk is optional here unless you want its prebuilt UI.",
+    "source": {
+      "label": "Supabase pricing",
+      "url": "https://supabase.com/pricing"
+    }
+  },
+  {
+    "id": "supabase-inactivity",
+    "kind": "terms",
+    "description": "Free Supabase projects pause after 1 week of inactivity.",
+    "when": {
+      "a": "supabase",
+      "b": "@always-on"
+    },
+    "severity": "warn",
+    "message": "Free Supabase projects pause after 1 week of inactivity. Low-traffic always-on apps may need to be woken up.",
+    "source": {
+      "label": "Supabase pricing",
+      "url": "https://supabase.com/pricing"
+    }
+  },
+  {
+    "id": "render-pg-expiry",
+    "kind": "terms",
+    "description": "Render free Postgres expires after 30 days.",
+    "when": {
+      "a": "render",
+      "b": "@slot:database"
+    },
+    "severity": "warn",
+    "message": "If you rely on Render free Postgres: it expires 30 days after creation. Plan a migration or use Neon, Turso or Supabase.",
+    "source": {
+      "label": "Render free docs",
+      "url": "https://render.com/docs/free"
+    }
+  },
+  {
+    "id": "d1-workers",
+    "kind": "pairs",
+    "description": "D1 is accessed from Cloudflare Workers; both free quotas are on the same pricing page.",
+    "when": {
+      "a": "cloudflare-d1",
+      "b": "cloudflare-workers"
+    },
+    "severity": "info",
+    "message": "D1 and Workers share one Cloudflare account and free plan. Natural pair.",
+    "source": {
+      "label": "Workers pricing",
+      "url": "https://developers.cloudflare.com/workers/platform/pricing/"
+    }
+  },
+  {
+    "id": "deno-sunset",
+    "kind": "terms",
+    "description": "Deno Deploy sunset announced for April 2027.",
+    "when": {
+      "a": "deno-deploy"
+    },
+    "severity": "warn",
+    "message": "Deno Deploy is announced to sunset in April 2027. Avoid it for anything long-lived.",
+    "source": {
+      "label": "Deno Deploy pricing",
+      "url": "https://deno.com/deploy/pricing"
+    }
+  },
+  {
+    "id": "quick-tunnel-prod",
+    "kind": "terms",
+    "description": "Quick Tunnels are for testing and development only.",
+    "when": {
+      "a": "cloudflare-tunnel",
+      "b": "@always-on"
+    },
+    "severity": "info",
+    "message": "TryCloudflare quick tunnels are for testing only. For production, create a named tunnel with a Cloudflare account.",
+    "source": {
+      "label": "TryCloudflare docs",
+      "url": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/"
+    }
+  }
+]

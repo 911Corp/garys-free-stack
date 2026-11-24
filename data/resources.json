@@ -1,0 +1,4669 @@
+[
+  {
+    "id": "github-pages",
+    "name": "GitHub Pages",
+    "tagline": "Static hosting straight from a public GitHub repo.",
+    "description": "Serves static sites (HTML, CSS, JS) from a GitHub repository, with custom domains and HTTPS. Ideal for docs, portfolios and SPA builds. No server code runs here.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "static-hosting",
+      "cdn",
+      "ci-friendly"
+    ],
+    "roles": [
+      "hosting"
+    ],
+    "website": "https://pages.github.com/",
+    "docs": "https://docs.github.com/en/pages",
+    "pricingUrl": "https://github.com/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": false,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "static-hosting"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Not allowed as free hosting to run an online business, e-commerce site or commercial SaaS (GitHub Pages limits page).",
+      "Private repositories need a paid GitHub plan for Pages.",
+      "One user or organization site per account; deployments time out after 10 minutes."
+    ],
+    "pros": [
+      "Zero config for public repos",
+      "Pairs with GitHub Actions for custom builds",
+      "Soft limits instead of surprise bills"
+    ],
+    "cons": [
+      "Static only",
+      "Commercial use restricted",
+      "Soft 100 GB/month bandwidth"
+    ],
+    "alternatives": [
+      "cloudflare-pages",
+      "netlify",
+      "vercel"
+    ],
+    "sources": [
+      {
+        "label": "GitHub Pages limits",
+        "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "GitHub pricing",
+        "url": "https://github.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-pages",
+    "name": "Cloudflare Pages",
+    "tagline": "Static and JAMstack hosting with unlimited bandwidth.",
+    "description": "Git-connected hosting for static sites and frontend frameworks on the Cloudflare network. The free plan advertises unlimited sites, static requests and bandwidth, with a monthly build budget.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "static-hosting",
+      "cdn",
+      "jamstack"
+    ],
+    "roles": [
+      "hosting"
+    ],
+    "website": "https://pages.cloudflare.com/",
+    "docs": "https://developers.cloudflare.com/pages/",
+    "pricingUrl": "https://pages.cloudflare.com/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "static-hosting",
+        "cdn"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "500 builds per month, 1 build at a time.",
+      "Commercial use terms not stated on the pricing page."
+    ],
+    "pros": [
+      "Unlimited bandwidth and static requests",
+      "100 custom domains per project",
+      "Same account as Workers, D1, R2"
+    ],
+    "cons": [
+      "Build count capped",
+      "Server logic means moving to Workers"
+    ],
+    "alternatives": [
+      "github-pages",
+      "netlify",
+      "vercel"
+    ],
+    "sources": [
+      {
+        "label": "Cloudflare Pages plans",
+        "url": "https://pages.cloudflare.com/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "netlify",
+    "name": "Netlify",
+    "tagline": "Frontend hosting with a shared monthly credit pool.",
+    "description": "Git-based deploys, previews, serverless functions and forms. The free plan runs on a 300 credit monthly pool shared between deploys, compute, bandwidth, forms and requests.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "static-hosting",
+      "serverless",
+      "jamstack",
+      "forms"
+    ],
+    "roles": [
+      "hosting",
+      "backend"
+    ],
+    "website": "https://www.netlify.com/",
+    "docs": "https://docs.netlify.com/",
+    "pricingUrl": "https://www.netlify.com/pricing/",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "static-hosting",
+        "server-runtime:node",
+        "forms"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "If a project exceeds its limits, all projects on the account pause until the next billing cycle.",
+      "Limited to 1 free member."
+    ],
+    "pros": [
+      "Hard monthly limits: no surprise costs",
+      "Alerts at 50%, 75% and 100%",
+      "Functions and forms included"
+    ],
+    "cons": [
+      "Credits are shared across everything",
+      "One over-limit project pauses all of them"
+    ],
+    "alternatives": [
+      "cloudflare-pages",
+      "vercel",
+      "github-pages"
+    ],
+    "sources": [
+      {
+        "label": "Netlify pricing",
+        "url": "https://www.netlify.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel (Hobby)",
+    "tagline": "Frontend cloud with functions, tuned for Next.js.",
+    "description": "Deploys frontend frameworks with serverless functions, image optimization and previews. The Hobby plan is free with monthly included usage and no option to buy more.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "static-hosting",
+      "serverless",
+      "nextjs",
+      "edge"
+    ],
+    "roles": [
+      "hosting",
+      "backend"
+    ],
+    "website": "https://vercel.com/",
+    "docs": "https://vercel.com/docs",
+    "pricingUrl": "https://vercel.com/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "static-hosting",
+        "server-runtime:node",
+        "server-runtime:edge"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Hobby accounts are limited to the usage caps and cannot purchase additional usage.",
+      "When a limit is exceeded you usually wait 30 days before using the feature again.",
+      "Commercial use on Hobby: not stated on the pricing or Hobby plan pages. Check the Terms of Service."
+    ],
+    "pros": [
+      "Best-in-class Next.js support",
+      "1M function invocations per month",
+      "Preview deploys"
+    ],
+    "cons": [
+      "30-day lockout when a cap is hit",
+      "Commercial terms need checking",
+      "Only 1 hour of runtime logs"
+    ],
+    "alternatives": [
+      "netlify",
+      "cloudflare-pages",
+      "render"
+    ],
+    "sources": [
+      {
+        "label": "Vercel pricing",
+        "url": "https://vercel.com/pricing",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Vercel Hobby plan docs",
+        "url": "https://vercel.com/docs/plans/hobby",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "render",
+    "name": "Render (Free instances)",
+    "tagline": "Free web services, Postgres and Key Value with sleep mode.",
+    "description": "Hosts web services, background workers and databases from Git. Free instances exist for web services, Postgres and Key Value, with spin-down and expiry rules.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "paas",
+      "backend",
+      "postgres",
+      "containers"
+    ],
+    "roles": [
+      "hosting",
+      "backend",
+      "database"
+    ],
+    "website": "https://render.com/",
+    "docs": "https://render.com/docs/free",
+    "pricingUrl": "https://render.com/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "server-runtime:node",
+        "server-runtime:any",
+        "postgres",
+        "sql",
+        "kv"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free web services spin down after 15 minutes without inbound traffic; spin-up takes about one minute.",
+      "Free Postgres expires 30 days after creation (14-day grace period), 1 GB fixed storage.",
+      "One free Postgres and one free Key Value per workspace. Key Value data is in-memory and lost on restart."
+    ],
+    "pros": [
+      "Real server processes, any language",
+      "750 free instance hours per month"
+    ],
+    "cons": [
+      "Cold starts",
+      "Free Postgres is temporary",
+      "Overage billed if a payment method exists"
+    ],
+    "alternatives": [
+      "cloudflare-workers",
+      "deno-deploy",
+      "oracle-always-free"
+    ],
+    "sources": [
+      {
+        "label": "Render free plans docs",
+        "url": "https://render.com/docs/free",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Render pricing",
+        "url": "https://render.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-workers",
+    "name": "Cloudflare Workers",
+    "tagline": "Serverless functions at the edge, 100k requests per day.",
+    "description": "Runs JavaScript, TypeScript and WebAssembly on Cloudflare's network. The free plan includes daily request quotas plus free allowances for KV and Durable Objects.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "serverless",
+      "edge-functions",
+      "kv",
+      "durable-objects"
+    ],
+    "roles": [
+      "backend",
+      "hosting"
+    ],
+    "website": "https://workers.cloudflare.com/",
+    "docs": "https://developers.cloudflare.com/workers/",
+    "pricingUrl": "https://developers.cloudflare.com/workers/platform/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "server-runtime:edge",
+        "kv",
+        "static-hosting"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "10 ms CPU time per invocation on the free plan.",
+      "KV free: 100,000 reads/day, 1,000 writes/day, 1 GB stored. Daily limits reset at 00:00 UTC."
+    ],
+    "pros": [
+      "Generous daily requests",
+      "No cold-start sleep",
+      "Same account as D1, R2, Workers AI"
+    ],
+    "cons": [
+      "Edge runtime is not full Node.js",
+      "Tight CPU budget per request"
+    ],
+    "alternatives": [
+      "deno-deploy",
+      "vercel",
+      "netlify"
+    ],
+    "sources": [
+      {
+        "label": "Workers pricing",
+        "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-d1",
+    "name": "Cloudflare D1",
+    "tagline": "Serverless SQLite database for Workers.",
+    "description": "SQLite-based database bound to Cloudflare Workers. The free plan covers millions of row reads per day and 5 GB of total storage.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "database",
+      "sqlite",
+      "serverless"
+    ],
+    "roles": [
+      "database"
+    ],
+    "website": "https://developers.cloudflare.com/d1/",
+    "docs": "https://developers.cloudflare.com/d1/",
+    "pricingUrl": "https://developers.cloudflare.com/workers/platform/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "sql",
+        "sqlite"
+      ],
+      "requires": [
+        "server-runtime:edge"
+      ]
+    },
+    "restrictions": [
+      "10 databases on the free plan.",
+      "Daily limits reset at 00:00 UTC."
+    ],
+    "pros": [
+      "5 million row reads per day",
+      "Plain SQL"
+    ],
+    "cons": [
+      "Tied to Workers",
+      "SQLite semantics, not Postgres"
+    ],
+    "alternatives": [
+      "turso",
+      "neon",
+      "supabase"
+    ],
+    "sources": [
+      {
+        "label": "Workers pricing (D1 section)",
+        "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-r2",
+    "name": "Cloudflare R2",
+    "tagline": "S3-compatible object storage with a free monthly quota.",
+    "description": "Object storage for files, images and backups with an S3-compatible API. Free usage includes 10 GB-month of storage plus millions of operations.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "storage",
+      "s3",
+      "object-storage"
+    ],
+    "roles": [
+      "storage"
+    ],
+    "website": "https://developers.cloudflare.com/r2/",
+    "docs": "https://developers.cloudflare.com/r2/",
+    "pricingUrl": "https://developers.cloudflare.com/workers/platform/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "object-storage"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free: 10 GB-month storage, 1M Class A and 10M Class B operations per month."
+    ],
+    "pros": [
+      "S3 API compatible",
+      "Works from Workers or any backend"
+    ],
+    "cons": [
+      "Usage-based beyond the free quota"
+    ],
+    "alternatives": [
+      "supabase",
+      "firebase"
+    ],
+    "sources": [
+      {
+        "label": "Workers pricing (R2 section)",
+        "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-free-plan",
+    "name": "Cloudflare Free (DNS, CDN, SSL)",
+    "tagline": "Free SSL, CDN and DDoS protection for your domain.",
+    "description": "Point your domain at Cloudflare to get a CDN, free SSL certificates and DDoS protection on the free plan.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "dns",
+      "cdn",
+      "ssl",
+      "ddos"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.cloudflare.com/plans/free/",
+    "docs": "https://developers.cloudflare.com/",
+    "pricingUrl": "https://www.cloudflare.com/plans/free/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "cdn",
+        "dns",
+        "ssl"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "DNS specifics are not described on the free plan page.",
+      "You need your own domain (not free)."
+    ],
+    "pros": [
+      "SSL, CDN and DDoS for $0"
+    ],
+    "cons": [
+      "Requires moving DNS to Cloudflare"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "Cloudflare Free plan",
+        "url": "https://www.cloudflare.com/plans/free/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "tagline": "Postgres, auth, storage and edge functions in one project.",
+    "description": "Hosted Postgres with authentication, file storage, realtime and edge functions. The platform is open source and can also be self-hosted.",
+    "categories": [
+      "infrastructure",
+      "development"
+    ],
+    "tags": [
+      "database",
+      "postgres",
+      "auth",
+      "storage",
+      "baas",
+      "edge-functions"
+    ],
+    "roles": [
+      "database",
+      "auth",
+      "storage",
+      "backend"
+    ],
+    "website": "https://supabase.com/",
+    "docs": "https://supabase.com/docs",
+    "repo": "https://github.com/supabase/supabase",
+    "pricingUrl": "https://supabase.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "postgres",
+        "sql",
+        "auth",
+        "object-storage",
+        "server-runtime:edge"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free projects are paused after 1 week of inactivity.",
+      "Limit of 2 active free projects.",
+      "Credit card requirement not stated on the pricing page."
+    ],
+    "pros": [
+      "Auth for 50,000 MAU included",
+      "Real Postgres",
+      "Open source, self-hostable"
+    ],
+    "cons": [
+      "500 MB database per project",
+      "Inactivity pause",
+      "Pro starts at $25/month"
+    ],
+    "alternatives": [
+      "neon",
+      "firebase",
+      "appwrite",
+      "pocketbase"
+    ],
+    "sources": [
+      {
+        "label": "Supabase pricing",
+        "url": "https://supabase.com/pricing",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Apache-2.0 license file (supabase/supabase)",
+        "url": "https://github.com/supabase/supabase",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "tagline": "Serverless Postgres that scales to zero.",
+    "description": "Managed serverless Postgres with branching, autoscaling and scale to zero. The permanent free plan allows up to 100 projects.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "database",
+      "postgres",
+      "serverless",
+      "branching"
+    ],
+    "roles": [
+      "database"
+    ],
+    "website": "https://neon.com/",
+    "docs": "https://neon.com/docs",
+    "pricingUrl": "https://neon.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "postgres",
+        "sql"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "1 GB storage per project, 20 GB total across projects.",
+      "Scales to zero after 5 minutes of inactivity (cannot be turned off on Free)."
+    ],
+    "pros": [
+      "No credit card required",
+      "100 projects, 10 branches each",
+      "Pay-as-you-go next step with no monthly minimum"
+    ],
+    "cons": [
+      "Cold start after scale to zero",
+      "6 hour history window"
+    ],
+    "alternatives": [
+      "supabase",
+      "turso",
+      "cloudflare-d1"
+    ],
+    "sources": [
+      {
+        "label": "Neon pricing",
+        "url": "https://neon.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "turso",
+    "name": "Turso",
+    "tagline": "Edge SQLite (libSQL) with 100 free databases.",
+    "description": "Hosted SQLite built on libSQL with replication and embedded replicas. The free plan is generous on reads and databases.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "database",
+      "sqlite",
+      "edge",
+      "libsql"
+    ],
+    "roles": [
+      "database"
+    ],
+    "website": "https://turso.tech/",
+    "docs": "https://docs.turso.tech/",
+    "pricingUrl": "https://turso.tech/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "sql",
+        "sqlite"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "10 million rows written per month on Free."
+    ],
+    "pros": [
+      "No credit card required",
+      "500 million rows read per month",
+      "100 databases"
+    ],
+    "cons": [
+      "SQLite semantics"
+    ],
+    "alternatives": [
+      "cloudflare-d1",
+      "neon"
+    ],
+    "gem": "Jarvis likes it: 100 databases on free, 500M monthly row reads, no card. Gary immediately made 99 side projects.",
+    "sources": [
+      {
+        "label": "Turso pricing",
+        "url": "https://turso.tech/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "mongodb-atlas",
+    "name": "MongoDB Atlas (M0)",
+    "tagline": "Free forever shared MongoDB cluster.",
+    "description": "Managed MongoDB document database. The M0 shared cluster is listed as free forever with 512 MB of storage.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "database",
+      "nosql",
+      "document"
+    ],
+    "roles": [
+      "database"
+    ],
+    "website": "https://www.mongodb.com/atlas",
+    "docs": "https://www.mongodb.com/docs/atlas/",
+    "pricingUrl": "https://www.mongodb.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "nosql"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Up to 100 operations per second.",
+      "Shared RAM and vCPU; 32 MB sort memory.",
+      "Connection limit and card requirement not stated on the pricing page."
+    ],
+    "pros": [
+      "Free forever",
+      "Flexible documents"
+    ],
+    "cons": [
+      "512 MB storage",
+      "Throughput capped"
+    ],
+    "alternatives": [
+      "firebase",
+      "supabase"
+    ],
+    "sources": [
+      {
+        "label": "MongoDB pricing",
+        "url": "https://www.mongodb.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "firebase",
+    "name": "Firebase (Spark)",
+    "tagline": "Google's app backend: Firestore, Auth, Hosting.",
+    "description": "Backend-as-a-service with Firestore, authentication and hosting. The Spark plan needs no payment method but excludes Cloud Functions and Cloud Storage.",
+    "categories": [
+      "infrastructure",
+      "development"
+    ],
+    "tags": [
+      "baas",
+      "database",
+      "nosql",
+      "auth",
+      "static-hosting"
+    ],
+    "roles": [
+      "database",
+      "auth",
+      "hosting"
+    ],
+    "website": "https://firebase.google.com/",
+    "docs": "https://firebase.google.com/docs",
+    "pricingUrl": "https://firebase.google.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "nosql",
+        "auth",
+        "static-hosting"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Cloud Functions and Cloud Storage are not available on Spark.",
+      "Hosting transfer: 360 MB per day.",
+      "Phone auth not applicable on Spark."
+    ],
+    "pros": [
+      "No payment method needed",
+      "50K MAU auth",
+      "Mature SDKs"
+    ],
+    "cons": [
+      "No server functions on free",
+      "Daily read/write caps"
+    ],
+    "alternatives": [
+      "supabase",
+      "appwrite",
+      "pocketbase"
+    ],
+    "sources": [
+      {
+        "label": "Firebase pricing",
+        "url": "https://firebase.google.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "upstash-redis",
+    "name": "Upstash Redis",
+    "tagline": "Serverless Redis billed per command.",
+    "description": "HTTP and TCP accessible Redis for serverless and edge apps. Free plan covers 500K commands per month.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "database",
+      "redis",
+      "kv",
+      "cache",
+      "serverless"
+    ],
+    "roles": [
+      "database",
+      "extras"
+    ],
+    "website": "https://upstash.com/",
+    "docs": "https://upstash.com/docs/redis",
+    "pricingUrl": "https://upstash.com/pricing/redis",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "kv"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "1 free database, 250 MB data.",
+      "Entering a credit card upgrades the database to pay-as-you-go."
+    ],
+    "pros": [
+      "Works over HTTP from edge runtimes",
+      "Simple pricing"
+    ],
+    "cons": [
+      "Single free database"
+    ],
+    "alternatives": [
+      "cloudflare-workers"
+    ],
+    "sources": [
+      {
+        "label": "Upstash Redis pricing",
+        "url": "https://upstash.com/pricing/redis",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "oracle-always-free",
+    "name": "Oracle Cloud Always Free",
+    "tagline": "Always Free VMs (Arm and AMD), card required.",
+    "description": "Oracle Cloud offers Always Free compute (Arm Ampere A1 and AMD), block storage and more, plus a time-limited trial credit. Exact Always Free capacities are not shown on the landing page.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "vps",
+      "compute",
+      "arm"
+    ],
+    "roles": [
+      "hosting",
+      "backend"
+    ],
+    "website": "https://www.oracle.com/cloud/free/",
+    "docs": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm",
+    "pricingUrl": "https://www.oracle.com/cloud/free/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": false,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "vps",
+        "server-runtime:any",
+        "server-runtime:node"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Credit or debit card required for identity verification (no prepaid or virtual cards).",
+      "US$300 trial credit for 30 days is separate from Always Free and only in select countries.",
+      "Exact Always Free quotas: see Oracle docs (not verified here)."
+    ],
+    "pros": [
+      "Full VMs you control",
+      "Run Docker, bots, self-hosted apps"
+    ],
+    "cons": [
+      "Card required",
+      "You manage the server"
+    ],
+    "alternatives": [
+      "render",
+      "coolify"
+    ],
+    "status": "needs-review",
+    "notes": "Always Free quantities need verification against the Oracle Free Tier docs.",
+    "sources": [
+      {
+        "label": "Oracle Cloud Free Tier",
+        "url": "https://www.oracle.com/cloud/free/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "deno-deploy",
+    "name": "Deno Deploy",
+    "tagline": "Serverless JS/TS with KV. Sunset announced for April 2027.",
+    "description": "Serverless platform for Deno and TypeScript with built-in KV. The free plan targets personal and small projects.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "serverless",
+      "edge-functions",
+      "kv",
+      "typescript"
+    ],
+    "roles": [
+      "backend",
+      "hosting"
+    ],
+    "website": "https://deno.com/deploy",
+    "docs": "https://docs.deno.com/deploy/",
+    "pricingUrl": "https://deno.com/deploy/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "server-runtime:edge",
+        "kv"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "The pricing page states Deno Deploy will be sunset in April 2027.",
+      "Free plan is for personal use and smaller projects."
+    ],
+    "pros": [
+      "1M requests per month",
+      "KV included"
+    ],
+    "cons": [
+      "Announced sunset: do not start long-lived projects here"
+    ],
+    "alternatives": [
+      "cloudflare-workers",
+      "vercel"
+    ],
+    "sources": [
+      {
+        "label": "Deno Deploy pricing",
+        "url": "https://deno.com/deploy/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-tunnel",
+    "name": "Cloudflare Tunnel",
+    "tagline": "Expose a local or private server without opening ports.",
+    "description": "The cloudflared connector links a machine to Cloudflare without a public IP. Quick Tunnels (TryCloudflare) give a temporary URL for testing.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "tunnel",
+      "remote-access",
+      "self-hosting"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/",
+    "docs": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/",
+    "repo": "https://github.com/cloudflare/cloudflared",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": null,
+      "commercialUse": null,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0 (cloudflared)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "tunnel"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Quick Tunnels are for testing and development only, with a hard limit of 200 in-flight requests.",
+      "Pricing for named tunnels is not stated on the pages checked."
+    ],
+    "pros": [
+      "No port forwarding",
+      "Great for demoing a local app"
+    ],
+    "cons": [
+      "Quick Tunnel URLs are temporary"
+    ],
+    "alternatives": [
+      "tailscale"
+    ],
+    "gem": "Gary hosts prod on his laptop through a quick tunnel. Jarvis reminds him the docs say testing only.",
+    "sources": [
+      {
+        "label": "TryCloudflare docs",
+        "url": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Apache-2.0 license file (cloudflare/cloudflared)",
+        "url": "https://github.com/cloudflare/cloudflared",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "tailscale",
+    "name": "Tailscale (Personal)",
+    "tagline": "Private mesh VPN between your devices.",
+    "description": "WireGuard-based network connecting your machines securely. The Personal plan is free for up to 6 users but limited to non-commercial use.",
+    "categories": [
+      "infrastructure"
+    ],
+    "tags": [
+      "vpn",
+      "remote-access",
+      "networking"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://tailscale.com/",
+    "docs": "https://tailscale.com/kb",
+    "repo": "https://github.com/tailscale/tailscale",
+    "pricingUrl": "https://tailscale.com/pricing",
+    "freeType": "non-commercial-only",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": false,
+      "openSource": true,
+      "selfHostable": null,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "BSD-3-Clause (client)",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "tunnel"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Personal plan is only suitable for non-commercial use.",
+      "Up to 6 users, 50 tagged resources."
+    ],
+    "pros": [
+      "Unlimited user devices",
+      "Very easy setup"
+    ],
+    "cons": [
+      "Non-commercial only"
+    ],
+    "alternatives": [
+      "cloudflare-tunnel"
+    ],
+    "sources": [
+      {
+        "label": "Tailscale pricing",
+        "url": "https://tailscale.com/pricing",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "BSD-3-Clause license file (tailscale/tailscale)",
+        "url": "https://github.com/tailscale/tailscale",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "coolify",
+    "name": "Coolify",
+    "tagline": "Self-hosted Heroku/Netlify alternative for your own server.",
+    "description": "Open source platform to deploy apps, databases and services on your own servers with a web UI. Free when self-hosted; you pay for the server.",
+    "categories": [
+      "infrastructure",
+      "open-source-local"
+    ],
+    "tags": [
+      "paas",
+      "self-hosted",
+      "docker",
+      "deploy"
+    ],
+    "roles": [
+      "hosting"
+    ],
+    "website": "https://coolify.io/",
+    "docs": "https://coolify.io/docs",
+    "repo": "https://github.com/coollabsio/coolify",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "server-runtime:any",
+        "server-runtime:node",
+        "static-hosting"
+      ],
+      "requires": [
+        "vps"
+      ]
+    },
+    "restrictions": [
+      "Needs a server you operate."
+    ],
+    "pros": [
+      "Own your platform",
+      "One-click databases"
+    ],
+    "cons": [
+      "You are the ops team"
+    ],
+    "alternatives": [
+      "render",
+      "netlify"
+    ],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (coollabsio/coolify)",
+        "url": "https://github.com/coollabsio/coolify",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "tagline": "The UI library most of the web runs on.",
+    "description": "Component-based JavaScript library for building user interfaces, maintained by Meta and the community.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "frontend",
+      "framework",
+      "javascript",
+      "ui"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://react.dev/",
+    "docs": "https://react.dev/learn",
+    "repo": "https://github.com/facebook/react",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "ui-framework"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Huge ecosystem",
+      "Runs anywhere"
+    ],
+    "cons": [
+      "Needs a build setup"
+    ],
+    "alternatives": [
+      "svelte",
+      "astro"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (facebook/react)",
+        "url": "https://github.com/facebook/react",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vite",
+    "name": "Vite",
+    "tagline": "Fast dev server and bundler for modern frontends.",
+    "description": "Frontend build tool with instant dev server and optimized production builds. Supports React, Vue, Svelte and more.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "build-tool",
+      "bundler",
+      "frontend"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://vite.dev/",
+    "docs": "https://vite.dev/guide/",
+    "repo": "https://github.com/vitejs/vite",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "build-tool"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Instant HMR",
+      "Outputs plain static files"
+    ],
+    "cons": [],
+    "alternatives": [
+      "astro"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (vitejs/vite)",
+        "url": "https://github.com/vitejs/vite",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "astro",
+    "name": "Astro",
+    "tagline": "Content-first web framework shipping zero JS by default.",
+    "description": "Web framework for content sites, blogs and landing pages that renders to static HTML and adds interactivity only where needed.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "frontend",
+      "framework",
+      "static-site",
+      "ssg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://astro.build/",
+    "docs": "https://docs.astro.build/",
+    "repo": "https://github.com/withastro/astro",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "ui-framework",
+        "build-tool"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Fast static output",
+      "Use React/Svelte components inside"
+    ],
+    "cons": [],
+    "alternatives": [
+      "react",
+      "svelte"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (withastro/astro)",
+        "url": "https://github.com/withastro/astro",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "tagline": "Compiler-based UI framework with tiny bundles.",
+    "description": "UI framework that compiles components to efficient JavaScript at build time.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "frontend",
+      "framework",
+      "ui"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://svelte.dev/",
+    "docs": "https://svelte.dev/docs",
+    "repo": "https://github.com/sveltejs/svelte",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "ui-framework"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Small bundles",
+      "Gentle learning curve"
+    ],
+    "cons": [
+      "Smaller ecosystem than React"
+    ],
+    "alternatives": [
+      "react",
+      "astro"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (sveltejs/svelte)",
+        "url": "https://github.com/sveltejs/svelte",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "tagline": "Utility-first CSS framework.",
+    "description": "CSS framework built from utility classes, generating only the styles you use.",
+    "categories": [
+      "development",
+      "design"
+    ],
+    "tags": [
+      "css",
+      "styling",
+      "ui"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://tailwindcss.com/",
+    "docs": "https://tailwindcss.com/docs",
+    "repo": "https://github.com/tailwindlabs/tailwindcss",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "css"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Fast prototyping",
+      "Tiny production CSS"
+    ],
+    "cons": [
+      "Verbose markup"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "MIT license file (tailwindlabs/tailwindcss)",
+        "url": "https://github.com/tailwindlabs/tailwindcss",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "shadcn-ui",
+    "name": "shadcn/ui",
+    "tagline": "Copy-paste React components you own.",
+    "description": "Collection of accessible React components that you copy into your project instead of installing as a dependency.",
+    "categories": [
+      "design",
+      "development"
+    ],
+    "tags": [
+      "components",
+      "ui-kit",
+      "react"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://ui.shadcn.com/",
+    "docs": "https://ui.shadcn.com/docs",
+    "repo": "https://github.com/shadcn-ui/ui",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "components"
+      ],
+      "requires": [
+        "ui-framework"
+      ]
+    },
+    "pros": [
+      "You own the code",
+      "Accessible primitives"
+    ],
+    "cons": [
+      "Recognizable default look"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "MIT license file (shadcn-ui/ui)",
+        "url": "https://github.com/shadcn-ui/ui",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vitest",
+    "name": "Vitest",
+    "tagline": "Vite-native unit test runner.",
+    "description": "Fast unit test framework sharing Vite's config and transforms, with a Jest-compatible API.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "testing",
+      "unit-tests"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://vitest.dev/",
+    "docs": "https://vitest.dev/guide/",
+    "repo": "https://github.com/vitest-dev/vitest",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "testing"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Zero config with Vite"
+    ],
+    "cons": [],
+    "alternatives": [
+      "playwright"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (vitest-dev/vitest)",
+        "url": "https://github.com/vitest-dev/vitest",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "tagline": "End-to-end browser testing across Chromium, Firefox, WebKit.",
+    "description": "Browser automation and end-to-end testing framework from Microsoft.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "testing",
+      "e2e",
+      "browser-automation"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://playwright.dev/",
+    "docs": "https://playwright.dev/docs/intro",
+    "repo": "https://github.com/microsoft/playwright",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "testing"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Three engines",
+      "Great tooling"
+    ],
+    "cons": [
+      "Heavier CI runs"
+    ],
+    "alternatives": [
+      "vitest"
+    ],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (microsoft/playwright)",
+        "url": "https://github.com/microsoft/playwright",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "vscodium",
+    "name": "VSCodium",
+    "tagline": "VS Code binaries without Microsoft telemetry.",
+    "description": "Community-built, freely licensed binaries of the VS Code editor source.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "ide",
+      "editor"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://vscodium.com/",
+    "docs": "https://github.com/VSCodium/vscodium/blob/master/docs/index.md",
+    "repo": "https://github.com/VSCodium/vscodium",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "editor"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Familiar editor",
+      "No telemetry by default"
+    ],
+    "cons": [
+      "Some Microsoft extensions unavailable"
+    ],
+    "alternatives": [
+      "github-codespaces"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (VSCodium/vscodium)",
+        "url": "https://github.com/VSCodium/vscodium",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "hoppscotch",
+    "name": "Hoppscotch",
+    "tagline": "Open source API client in the browser.",
+    "description": "Lightweight API development tool for REST, GraphQL and WebSocket requests. Usable in the browser or self-hosted.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "api-client",
+      "testing",
+      "rest",
+      "graphql"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://hoppscotch.io/",
+    "docs": "https://docs.hoppscotch.io/",
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": null,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "api-client"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Runs in a tab",
+      "Self-hostable"
+    ],
+    "cons": [],
+    "alternatives": [],
+    "gem": "A Postman-style client that opens in a browser tab. Jarvis approves of anything that does not need a 400 MB install.",
+    "sources": [
+      {
+        "label": "MIT license file (hoppscotch/hoppscotch)",
+        "url": "https://github.com/hoppscotch/hoppscotch",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "tagline": "CI/CD and cron jobs, free on public repos.",
+    "description": "Workflow automation for builds, tests, deploys and scheduled jobs. Standard runners are free for public repositories.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "ci-cd",
+      "automation",
+      "cron"
+    ],
+    "roles": [
+      "automation",
+      "extras"
+    ],
+    "website": "https://github.com/features/actions",
+    "docs": "https://docs.github.com/en/actions",
+    "pricingUrl": "https://docs.github.com/en/billing/concepts/product-billing/github-actions",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "ci",
+        "automation",
+        "cron"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free on standard runners for public repos. Private repos on GitHub Free get $12 of compute per month (2,000 CI/CD minutes per the pricing page).",
+      "500 MB artifact storage shared with Packages; 10 GB cache per repo.",
+      "Larger runners are always billed."
+    ],
+    "pros": [
+      "Scheduled jobs for $0",
+      "Huge marketplace"
+    ],
+    "cons": [
+      "Private repo minutes are limited"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "GitHub Actions billing",
+        "url": "https://docs.github.com/en/billing/concepts/product-billing/github-actions",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "GitHub pricing",
+        "url": "https://github.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "github-codespaces",
+    "name": "GitHub Codespaces",
+    "tagline": "Cloud dev environments, monthly free hours for personal accounts.",
+    "description": "Browser or VS Code connected dev containers hosted by GitHub. Personal free accounts get included compute time and storage each month.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "dev-environment",
+      "cloud-ide"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://github.com/features/codespaces",
+    "docs": "https://docs.github.com/en/codespaces",
+    "pricingUrl": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "dev-env"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "120 hours compute and 15 GB-month storage per month on personal GitHub Free. Usage multiplier depends on machine size.",
+      "Included hours apply to personal accounts, not free organizations."
+    ],
+    "pros": [
+      "Code from any device"
+    ],
+    "cons": [
+      "Bigger machines burn hours faster"
+    ],
+    "alternatives": [
+      "vscodium"
+    ],
+    "sources": [
+      {
+        "label": "Codespaces billing",
+        "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "better-auth",
+    "name": "Better Auth",
+    "tagline": "TypeScript auth library you run in your own backend.",
+    "description": "Framework-agnostic authentication library for TypeScript with email/password, OAuth and plugins. Stores users in your own database.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "auth",
+      "typescript",
+      "library"
+    ],
+    "roles": [
+      "auth"
+    ],
+    "website": "https://www.better-auth.com/",
+    "docs": "https://www.better-auth.com/docs",
+    "repo": "https://github.com/better-auth/better-auth",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "auth"
+      ],
+      "requires": [
+        "server-runtime",
+        "sql"
+      ]
+    },
+    "pros": [
+      "No per-user pricing",
+      "Your data stays in your DB"
+    ],
+    "cons": [
+      "You run and secure it"
+    ],
+    "alternatives": [
+      "clerk",
+      "supabase"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (better-auth/better-auth)",
+        "url": "https://github.com/better-auth/better-auth",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "clerk",
+    "name": "Clerk (Hobby)",
+    "tagline": "Drop-in auth UI and user management.",
+    "description": "Hosted authentication with prebuilt sign-in components, sessions and organizations. Free Hobby plan up to 50,000 monthly retained users per app.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "auth",
+      "user-management",
+      "saas"
+    ],
+    "roles": [
+      "auth"
+    ],
+    "website": "https://clerk.com/",
+    "docs": "https://clerk.com/docs",
+    "pricingUrl": "https://clerk.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": true
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "auth"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Clerk branding cannot be removed on Hobby.",
+      "Fixed 7-day session lifetime; no MFA, passkeys or SMS codes on Hobby.",
+      "Up to 3 dashboard seats."
+    ],
+    "pros": [
+      "No credit card required",
+      "Prebuilt UI"
+    ],
+    "cons": [
+      "Per-user pricing after 50,000 MRU"
+    ],
+    "alternatives": [
+      "better-auth",
+      "supabase",
+      "firebase"
+    ],
+    "sources": [
+      {
+        "label": "Clerk pricing",
+        "url": "https://clerk.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "pocketbase",
+    "name": "PocketBase",
+    "tagline": "Backend in one file: SQLite, auth, files, realtime.",
+    "description": "Open source backend packaged as a single executable with an embedded SQLite database, auth, file storage, realtime and an admin UI.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "baas",
+      "sqlite",
+      "auth",
+      "self-hosted",
+      "local-first"
+    ],
+    "roles": [
+      "backend",
+      "database",
+      "auth",
+      "storage"
+    ],
+    "website": "https://pocketbase.io/",
+    "docs": "https://pocketbase.io/docs/",
+    "repo": "https://github.com/pocketbase/pocketbase",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "sql",
+        "sqlite",
+        "auth",
+        "object-storage",
+        "server-runtime:any"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "One binary, runs on a laptop or tiny VPS",
+      "Admin dashboard included"
+    ],
+    "cons": [
+      "Single-node by design",
+      "Needs somewhere to run 24/7 in prod"
+    ],
+    "alternatives": [
+      "supabase",
+      "appwrite",
+      "firebase"
+    ],
+    "gem": "A whole backend in one file. Gary ran it from his Downloads folder. Jarvis moved it to a server.",
+    "sources": [
+      {
+        "label": "MIT license file (pocketbase/pocketbase)",
+        "url": "https://github.com/pocketbase/pocketbase",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "appwrite",
+    "name": "Appwrite (self-hosted)",
+    "tagline": "Open source backend server: auth, DB, storage, functions.",
+    "description": "Self-hostable backend platform with databases, authentication, storage and functions, deployed with Docker.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "baas",
+      "self-hosted",
+      "auth",
+      "database"
+    ],
+    "roles": [
+      "backend",
+      "database",
+      "auth",
+      "storage"
+    ],
+    "website": "https://appwrite.io/",
+    "docs": "https://appwrite.io/docs",
+    "repo": "https://github.com/appwrite/appwrite",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "BSD-3-Clause",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "auth",
+        "nosql",
+        "object-storage",
+        "server-runtime:any"
+      ],
+      "requires": [
+        "vps"
+      ]
+    },
+    "notes": "Appwrite also sells a hosted cloud; its free tier was not verified here.",
+    "pros": [
+      "Full BaaS you own"
+    ],
+    "cons": [
+      "Docker stack to maintain"
+    ],
+    "alternatives": [
+      "supabase",
+      "pocketbase"
+    ],
+    "sources": [
+      {
+        "label": "BSD-3-Clause license file (appwrite/appwrite)",
+        "url": "https://github.com/appwrite/appwrite",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "discord-js",
+    "name": "discord.js",
+    "tagline": "Node.js library for Discord bots.",
+    "description": "Library for interacting with the Discord API from Node.js, the standard choice for JavaScript Discord bots.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "discord",
+      "bot",
+      "library",
+      "node"
+    ],
+    "roles": [
+      "backend"
+    ],
+    "website": "https://discord.js.org/",
+    "docs": "https://discord.js.org/docs",
+    "repo": "https://github.com/discordjs/discord.js",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "discord-bot-lib"
+      ],
+      "requires": [
+        "server-runtime:node"
+      ]
+    },
+    "restrictions": [
+      "A gateway bot needs an always-on Node.js process."
+    ],
+    "pros": [
+      "Mature, well documented"
+    ],
+    "cons": [
+      "Needs a persistent host"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (discordjs/discord.js)",
+        "url": "https://github.com/discordjs/discord.js",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "godot",
+    "name": "Godot Engine",
+    "tagline": "Free open source 2D and 3D game engine.",
+    "description": "Complete game engine with editor, scripting (GDScript, C#) and exports to desktop, mobile and web. No royalties.",
+    "categories": [
+      "development",
+      "design"
+    ],
+    "tags": [
+      "game-engine",
+      "gamedev",
+      "2d",
+      "3d"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://godotengine.org/",
+    "docs": "https://docs.godotengine.org/",
+    "repo": "https://github.com/godotengine/godot",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "game-engine"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "No royalties, MIT",
+      "Web export"
+    ],
+    "cons": [
+      "Web exports can be heavy"
+    ],
+    "alternatives": [
+      "phaser"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (godotengine/godot)",
+        "url": "https://github.com/godotengine/godot",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "phaser",
+    "name": "Phaser",
+    "tagline": "HTML5 game framework for 2D browser games.",
+    "description": "JavaScript/TypeScript framework for 2D games rendered with WebGL or Canvas in the browser.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "game-engine",
+      "gamedev",
+      "2d",
+      "javascript"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://phaser.io/",
+    "docs": "https://docs.phaser.io/",
+    "repo": "https://github.com/phaserjs/phaser",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "game-engine"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Ships as a static site"
+    ],
+    "cons": [
+      "2D only"
+    ],
+    "alternatives": [
+      "godot"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (phaserjs/phaser)",
+        "url": "https://github.com/phaserjs/phaser",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "groq",
+    "name": "Groq API",
+    "tagline": "Very fast LLM inference with a free plan.",
+    "description": "API for open-weight LLMs on Groq hardware. A free plan exists with per-model rate limits per minute and per day.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "llm",
+      "api",
+      "inference",
+      "open-models"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://groq.com/",
+    "docs": "https://console.groq.com/docs",
+    "pricingUrl": "https://console.groq.com/docs/rate-limits",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "llm-api"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Example free limits (openai/gpt-oss-120b): 30 requests/min, 1,000 requests/day, 8K tokens/min, 200K tokens/day.",
+      "The rate-limit page does not clearly separate Free and Developer plan figures."
+    ],
+    "pros": [
+      "Fast responses",
+      "OpenAI-compatible API"
+    ],
+    "cons": [
+      "Low daily token budget"
+    ],
+    "alternatives": [
+      "gemini-api",
+      "openrouter",
+      "ollama"
+    ],
+    "status": "needs-review",
+    "notes": "Rate limit table labelling is ambiguous on the source page.",
+    "sources": [
+      {
+        "label": "Groq rate limits",
+        "url": "https://console.groq.com/docs/rate-limits",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "gemini-api",
+    "name": "Google Gemini API (free tier)",
+    "tagline": "Free tier on several Gemini models; prompts may train Google products.",
+    "description": "Google's Gemini API offers a free tier on many models, including Flash and Flash-Lite variants and embeddings. Free tier content is used to improve Google products.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "llm",
+      "api",
+      "embeddings",
+      "multimodal"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://ai.google.dev/",
+    "docs": "https://ai.google.dev/gemini-api/docs",
+    "pricingUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "llm-api",
+        "embeddings"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free tier: content is used to improve Google products (paid tier: not used).",
+      "Image, video and music models (Imagen, Veo, Lyria) have no free tier.",
+      "Free tier rate limits are on a separate page (not captured here)."
+    ],
+    "pros": [
+      "Many models free, including embeddings"
+    ],
+    "cons": [
+      "Do not send sensitive data on free tier"
+    ],
+    "alternatives": [
+      "groq",
+      "openrouter",
+      "ollama"
+    ],
+    "sources": [
+      {
+        "label": "Gemini API pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter (free models)",
+    "tagline": "One API, many models, including :free variants.",
+    "description": "Unified API routing to many LLM providers. Models with the :free suffix cost nothing within daily request limits.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "llm",
+      "api",
+      "router",
+      "gateway"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://openrouter.ai/",
+    "docs": "https://openrouter.ai/docs",
+    "pricingUrl": "https://openrouter.ai/docs/api-reference/limits",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "llm-api"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free models: 20 requests/minute; 50 requests/day if fewer than 10 credits purchased, 1,000/day after buying at least 10."
+    ],
+    "pros": [
+      "Swap models without code changes"
+    ],
+    "cons": [
+      "50 requests/day is tight at $0"
+    ],
+    "alternatives": [
+      "groq",
+      "gemini-api"
+    ],
+    "sources": [
+      {
+        "label": "OpenRouter limits",
+        "url": "https://openrouter.ai/docs/api-reference/limits",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-workers-ai",
+    "name": "Cloudflare Workers AI",
+    "tagline": "Run models on Cloudflare GPUs, 10,000 neurons per day free.",
+    "description": "Serverless inference for text, image, speech and embedding models from Workers. Usage is measured in neurons.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "llm",
+      "inference",
+      "embeddings",
+      "serverless"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://developers.cloudflare.com/workers-ai/",
+    "docs": "https://developers.cloudflare.com/workers-ai/",
+    "pricingUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "llm-api",
+        "embeddings"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "10,000 neurons per day free on both Workers Free and Paid. Beyond that requires Workers Paid.",
+      "Neurons per request depend on the model."
+    ],
+    "pros": [
+      "Lives next to your Worker",
+      "Many model types"
+    ],
+    "cons": [
+      "Neuron math is model-specific"
+    ],
+    "alternatives": [
+      "gemini-api",
+      "groq"
+    ],
+    "sources": [
+      {
+        "label": "Workers AI pricing",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "tagline": "Models, datasets and free CPU Spaces.",
+    "description": "Hub for open models and datasets, with Spaces to host ML demos. Free accounts can run Spaces on CPU Basic hardware.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "models",
+      "datasets",
+      "hosting",
+      "open-models",
+      "spaces"
+    ],
+    "roles": [
+      "ai",
+      "hosting"
+    ],
+    "website": "https://huggingface.co/",
+    "docs": "https://huggingface.co/docs",
+    "pricingUrl": "https://huggingface.co/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "model-hub",
+        "server-runtime:any"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free Spaces run on CPU Basic (2 vCPU, 16 GB memory).",
+      "Free-account inference credits are not stated on the pricing page (PRO lists $2/month)."
+    ],
+    "pros": [
+      "Largest open model hub",
+      "Free demo hosting"
+    ],
+    "cons": [
+      "GPU costs extra"
+    ],
+    "alternatives": [
+      "ollama"
+    ],
+    "sources": [
+      {
+        "label": "Hugging Face pricing",
+        "url": "https://huggingface.co/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "tagline": "Run open LLMs locally with one command.",
+    "description": "Runs open-weight language models on your own machine with a simple CLI and a local API. Local use is free and unlimited.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "llm",
+      "local-models",
+      "local-first",
+      "cli"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://ollama.com/",
+    "docs": "https://docs.ollama.com/",
+    "repo": "https://github.com/ollama/ollama",
+    "pricingUrl": "https://ollama.com/pricing",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "llm-local",
+        "llm-api"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Running models on your own hardware is unlimited. Cloud models are billed per token.",
+      "Speed depends on your hardware."
+    ],
+    "pros": [
+      "Private, offline",
+      "OpenAI-compatible local API"
+    ],
+    "cons": [
+      "Needs RAM/GPU for large models"
+    ],
+    "alternatives": [
+      "llama-cpp",
+      "groq"
+    ],
+    "sources": [
+      {
+        "label": "MIT license file (ollama/ollama)",
+        "url": "https://github.com/ollama/ollama",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Ollama pricing",
+        "url": "https://ollama.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "llama-cpp",
+    "name": "llama.cpp",
+    "tagline": "The C/C++ engine behind local LLMs.",
+    "description": "High-performance LLM inference in C/C++ for CPUs and GPUs, with a built-in server. Powers many local AI tools.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "llm",
+      "local-models",
+      "inference",
+      "local-first"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://github.com/ggml-org/llama.cpp",
+    "docs": "https://github.com/ggml-org/llama.cpp#readme",
+    "repo": "https://github.com/ggml-org/llama.cpp",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "llm-local",
+        "llm-api"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Runs on modest hardware",
+      "Server mode"
+    ],
+    "cons": [
+      "Lower level than Ollama"
+    ],
+    "alternatives": [
+      "ollama"
+    ],
+    "gem": "The engine under half the local AI tools you know. Jarvis respects anything that runs on a toaster.",
+    "sources": [
+      {
+        "label": "MIT license file (ggml-org/llama.cpp)",
+        "url": "https://github.com/ggml-org/llama.cpp",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "whisper-cpp",
+    "name": "whisper.cpp",
+    "tagline": "Local speech-to-text, no API bill.",
+    "description": "Port of OpenAI's Whisper speech recognition model in C/C++, running fully offline on CPU or GPU.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "speech-to-text",
+      "transcription",
+      "audio",
+      "local-first"
+    ],
+    "roles": [
+      "ai"
+    ],
+    "website": "https://github.com/ggml-org/whisper.cpp",
+    "docs": "https://github.com/ggml-org/whisper.cpp#readme",
+    "repo": "https://github.com/ggml-org/whisper.cpp",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "speech-to-text"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Offline transcription",
+      "Fast on CPU"
+    ],
+    "cons": [
+      "CLI first"
+    ],
+    "alternatives": [],
+    "gem": "Transcribe podcasts on your own machine. Infrastructure: $0. Electricity: Gary does not want to talk about it.",
+    "sources": [
+      {
+        "label": "MIT license file (ggml-org/whisper.cpp)",
+        "url": "https://github.com/ggml-org/whisper.cpp",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "open-webui",
+    "name": "Open WebUI",
+    "tagline": "Self-hosted ChatGPT-style interface for local and API models.",
+    "description": "Web interface for chatting with Ollama or OpenAI-compatible APIs, with RAG and multi-user features. Self-hosted.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "chat-ui",
+      "self-hosted",
+      "rag"
+    ],
+    "roles": [
+      "ai",
+      "frontend"
+    ],
+    "website": "https://openwebui.com/",
+    "docs": "https://docs.openwebui.com/",
+    "repo": "https://github.com/open-webui/open-webui",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Open WebUI License (BSD-3 style with additional branding terms)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "chat-ui"
+      ],
+      "requires": [
+        "llm-local|llm-api"
+      ]
+    },
+    "restrictions": [
+      "Custom license with extra clauses on top of BSD-3 terms: read it before rebranding or redistributing."
+    ],
+    "pros": [
+      "Polished UI over your own models"
+    ],
+    "cons": [
+      "License is not a standard OSI license"
+    ],
+    "alternatives": [],
+    "status": "needs-review",
+    "notes": "openSource and commercialUse left unknown pending a full license review.",
+    "sources": [
+      {
+        "label": "Open WebUI License license file (open-webui/open-webui)",
+        "url": "https://github.com/open-webui/open-webui",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "qdrant",
+    "name": "Qdrant",
+    "tagline": "Vector database, open source with a free cloud cluster.",
+    "description": "Vector similarity search engine for embeddings and RAG. Open source for self-hosting, plus a free managed cluster.",
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "vector-db",
+      "embeddings",
+      "rag",
+      "search"
+    ],
+    "roles": [
+      "database",
+      "ai"
+    ],
+    "website": "https://qdrant.tech/",
+    "docs": "https://qdrant.tech/documentation/",
+    "repo": "https://github.com/qdrant/qdrant",
+    "pricingUrl": "https://qdrant.tech/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "vector-db"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free cloud cluster: single node, 0.5 vCPU, 1 GB RAM, 4 GB disk, no high availability."
+    ],
+    "pros": [
+      "Self-host or cloud",
+      "Fast filtering"
+    ],
+    "cons": [
+      "Free cluster is small"
+    ],
+    "alternatives": [
+      "chroma",
+      "pgvector"
+    ],
+    "sources": [
+      {
+        "label": "Qdrant pricing",
+        "url": "https://qdrant.tech/pricing/",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "Apache-2.0 license file (qdrant/qdrant)",
+        "url": "https://github.com/qdrant/qdrant",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "chroma",
+    "name": "Chroma",
+    "tagline": "Embeddable open source vector database.",
+    "description": "AI-native embedding database that runs in-process or as a server, popular for local RAG prototypes.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "vector-db",
+      "embeddings",
+      "rag",
+      "local-first"
+    ],
+    "roles": [
+      "database",
+      "ai"
+    ],
+    "website": "https://www.trychroma.com/",
+    "docs": "https://docs.trychroma.com/",
+    "repo": "https://github.com/chroma-core/chroma",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Apache-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "vector-db"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "pip install and go"
+    ],
+    "cons": [
+      "Hosting is on you"
+    ],
+    "alternatives": [
+      "qdrant",
+      "pgvector"
+    ],
+    "sources": [
+      {
+        "label": "Apache-2.0 license file (chroma-core/chroma)",
+        "url": "https://github.com/chroma-core/chroma",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "pgvector",
+    "name": "pgvector",
+    "tagline": "Vector search inside Postgres.",
+    "description": "Postgres extension adding vector types and similarity search, so embeddings live next to your relational data.",
+    "categories": [
+      "ai",
+      "development"
+    ],
+    "tags": [
+      "vector-db",
+      "postgres",
+      "embeddings"
+    ],
+    "roles": [
+      "database",
+      "ai"
+    ],
+    "website": "https://github.com/pgvector/pgvector",
+    "docs": "https://github.com/pgvector/pgvector#readme",
+    "repo": "https://github.com/pgvector/pgvector",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "PostgreSQL License",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "vector-db"
+      ],
+      "requires": [
+        "postgres"
+      ]
+    },
+    "restrictions": [
+      "Your Postgres host must offer the extension."
+    ],
+    "pros": [
+      "One database for everything"
+    ],
+    "cons": [
+      "Needs Postgres"
+    ],
+    "alternatives": [
+      "qdrant",
+      "chroma"
+    ],
+    "sources": [
+      {
+        "label": "PostgreSQL license file (pgvector/pgvector)",
+        "url": "https://github.com/pgvector/pgvector",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "github-copilot-free",
+    "name": "GitHub Copilot Free",
+    "tagline": "AI code completions in your editor, monthly cap.",
+    "description": "Free tier of GitHub's AI coding assistant, for vibe coding sessions with a monthly completion allowance.",
+    "categories": [
+      "ai",
+      "development"
+    ],
+    "tags": [
+      "vibe-coding",
+      "code-assistant",
+      "ide"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://github.com/features/copilot",
+    "docs": "https://docs.github.com/en/copilot",
+    "pricingUrl": "https://github.com/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "code-assistant"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Up to 2,000 completions per month. Chat request limit not stated on the pricing page."
+    ],
+    "pros": [
+      "Works in common editors"
+    ],
+    "cons": [
+      "Monthly cap"
+    ],
+    "alternatives": [
+      "ollama"
+    ],
+    "sources": [
+      {
+        "label": "GitHub pricing",
+        "url": "https://github.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "cloudflare-web-analytics",
+    "name": "Cloudflare Web Analytics",
+    "tagline": "Free, cookie-free web analytics via a JS beacon.",
+    "description": "Privacy-focused analytics that does not use cookies or localStorage. Works with a JavaScript beacon, no need to proxy your site.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "analytics",
+      "privacy",
+      "cookie-free"
+    ],
+    "roles": [
+      "analytics"
+    ],
+    "website": "https://www.cloudflare.com/web-analytics/",
+    "docs": "https://developers.cloudflare.com/web-analytics/",
+    "pricingUrl": "https://www.cloudflare.com/web-analytics/",
+    "freeType": "fully-free",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "analytics"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "No usage limits stated on the product page."
+    ],
+    "pros": [
+      "$0, no cookie banner needed for it",
+      "No DNS change required"
+    ],
+    "cons": [
+      "Basic metrics"
+    ],
+    "alternatives": [
+      "umami",
+      "goatcounter",
+      "plausible-ce"
+    ],
+    "sources": [
+      {
+        "label": "Cloudflare Web Analytics",
+        "url": "https://www.cloudflare.com/web-analytics/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "umami",
+    "name": "Umami",
+    "tagline": "Open source analytics: free cloud hobby plan or self-host.",
+    "description": "Simple privacy-focused web analytics. Use the Umami Cloud Hobby plan or self-host it for free.",
+    "categories": [
+      "data-apis",
+      "open-source-local"
+    ],
+    "tags": [
+      "analytics",
+      "privacy",
+      "self-hosted"
+    ],
+    "roles": [
+      "analytics"
+    ],
+    "website": "https://umami.is/",
+    "docs": "https://umami.is/docs",
+    "repo": "https://github.com/umami-software/umami",
+    "pricingUrl": "https://umami.is/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "analytics"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Cloud Hobby: up to 100K events/month, 1 website, 6 month retention.",
+      "Self-hosting is always free (you pay the server)."
+    ],
+    "pros": [
+      "Clean dashboard",
+      "MIT licensed"
+    ],
+    "cons": [
+      "Cloud free plan covers one site"
+    ],
+    "alternatives": [
+      "goatcounter",
+      "cloudflare-web-analytics",
+      "plausible-ce"
+    ],
+    "sources": [
+      {
+        "label": "Umami pricing",
+        "url": "https://umami.is/pricing",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "MIT license file (umami-software/umami)",
+        "url": "https://github.com/umami-software/umami",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "goatcounter",
+    "name": "GoatCounter",
+    "tagline": "Tiny open source analytics, free for reasonable public use.",
+    "description": "Lightweight web analytics without cookies or persistent personal data, run by an independent developer. Hosted for free within reasonable use, or self-hosted.",
+    "categories": [
+      "data-apis",
+      "open-source-local"
+    ],
+    "tags": [
+      "analytics",
+      "privacy",
+      "indie",
+      "self-hosted"
+    ],
+    "roles": [
+      "analytics"
+    ],
+    "website": "https://www.goatcounter.com/",
+    "docs": "https://www.goatcounter.com/help",
+    "repo": "https://github.com/arp242/goatcounter",
+    "pricingUrl": "https://www.goatcounter.com/",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "EUPL-1.2 (slightly modified)",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "analytics"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free hosted service for reasonable public usage; millions of pageviews per day is not appropriate.",
+      "No monthly cap number published."
+    ],
+    "pros": [
+      "Indie and open source",
+      "Very light script"
+    ],
+    "cons": [
+      "Minimal features by design"
+    ],
+    "alternatives": [
+      "umami",
+      "cloudflare-web-analytics"
+    ],
+    "gem": "An indie, one-person analytics tool that has been quietly doing its job for years. Jarvis finds it suspiciously reasonable.",
+    "sources": [
+      {
+        "label": "GoatCounter home",
+        "url": "https://www.goatcounter.com/",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "EUPL-1.2 modified license file (arp242/goatcounter)",
+        "url": "https://github.com/arp242/goatcounter",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "plausible-ce",
+    "name": "Plausible Community Edition",
+    "tagline": "Self-hosted privacy analytics (AGPL).",
+    "description": "Self-hosted edition of Plausible Analytics. Free to run on your own infrastructure under AGPL-3.0.",
+    "categories": [
+      "data-apis",
+      "open-source-local"
+    ],
+    "tags": [
+      "analytics",
+      "privacy",
+      "self-hosted"
+    ],
+    "roles": [
+      "analytics"
+    ],
+    "website": "https://plausible.io/",
+    "docs": "https://github.com/plausible/community-edition",
+    "repo": "https://github.com/plausible/analytics",
+    "freeType": "community-edition",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "advanced",
+    "compat": {
+      "provides": [
+        "analytics"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "restrictions": [
+      "AGPL: modifications you serve to users must be shared."
+    ],
+    "pros": [
+      "Polished dashboard"
+    ],
+    "cons": [
+      "Needs a server and a database"
+    ],
+    "alternatives": [
+      "umami",
+      "goatcounter"
+    ],
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (plausible/analytics)",
+        "url": "https://github.com/plausible/analytics",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "resend",
+    "name": "Resend",
+    "tagline": "Developer email API, 3,000 emails per month free.",
+    "description": "Transactional email API with React Email support and a clean developer experience.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "email",
+      "transactional",
+      "api"
+    ],
+    "roles": [
+      "email"
+    ],
+    "website": "https://resend.com/",
+    "docs": "https://resend.com/docs",
+    "pricingUrl": "https://resend.com/pricing",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "email"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "3,000 emails per month, 100 per day, 3 domains, 30-day data retention."
+    ],
+    "pros": [
+      "Great DX"
+    ],
+    "cons": [
+      "100/day cap"
+    ],
+    "alternatives": [
+      "brevo",
+      "listmonk"
+    ],
+    "sources": [
+      {
+        "label": "Resend pricing",
+        "url": "https://resend.com/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "brevo",
+    "name": "Brevo (Free)",
+    "tagline": "Email marketing and transactional, 300 emails per day.",
+    "description": "Email marketing and transactional platform. The free plan sends up to 300 emails per day once the account is approved.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "email",
+      "newsletter",
+      "transactional",
+      "marketing"
+    ],
+    "roles": [
+      "email"
+    ],
+    "website": "https://www.brevo.com/",
+    "docs": "https://developers.brevo.com/",
+    "pricingUrl": "https://www.brevo.com/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "email",
+        "smtp"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Up to 300 emails per day after account approval.",
+      "Removing the Brevo logo appears to be a paid feature (not confirmed on the page)."
+    ],
+    "pros": [
+      "No credit card needed",
+      "SMTP relay usable by other tools"
+    ],
+    "cons": [
+      "Daily cap"
+    ],
+    "alternatives": [
+      "resend",
+      "listmonk"
+    ],
+    "sources": [
+      {
+        "label": "Brevo pricing",
+        "url": "https://www.brevo.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "listmonk",
+    "name": "listmonk",
+    "tagline": "Self-hosted newsletter and mailing list manager.",
+    "description": "High-performance, self-hosted newsletter manager in a single binary with Postgres. Sends through any SMTP relay.",
+    "categories": [
+      "data-apis",
+      "open-source-local"
+    ],
+    "tags": [
+      "email",
+      "newsletter",
+      "self-hosted"
+    ],
+    "roles": [
+      "email"
+    ],
+    "website": "https://listmonk.app/",
+    "docs": "https://listmonk.app/docs/",
+    "repo": "https://github.com/knadh/listmonk",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "AGPL-3.0",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "newsletter"
+      ],
+      "requires": [
+        "postgres",
+        "smtp",
+        "server-runtime:any"
+      ]
+    },
+    "restrictions": [
+      "Needs an SMTP provider to actually deliver email."
+    ],
+    "pros": [
+      "No per-subscriber pricing"
+    ],
+    "cons": [
+      "You manage deliverability"
+    ],
+    "alternatives": [
+      "brevo",
+      "resend"
+    ],
+    "gem": "Newsletter software with no per-subscriber bill. Gary will finally email his 3 followers at scale.",
+    "sources": [
+      {
+        "label": "AGPL-3.0 license file (knadh/listmonk)",
+        "url": "https://github.com/knadh/listmonk",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry (Developer)",
+    "tagline": "Error tracking and tracing, free for one user.",
+    "description": "Application monitoring for errors, performance tracing and session replay. The Developer plan is free for a single user.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "monitoring",
+      "error-tracking",
+      "tracing"
+    ],
+    "roles": [
+      "monitoring"
+    ],
+    "website": "https://sentry.io/",
+    "docs": "https://docs.sentry.io/",
+    "pricingUrl": "https://sentry.io/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": null,
+      "selfHostable": null,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "error-tracking"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "1 user, 5k errors, 5M spans, 50 replays, 1 cron monitor, 1 uptime monitor, 30-day lookback.",
+      "The page does not say whether the 5k errors are per month."
+    ],
+    "pros": [
+      "Industry standard SDKs"
+    ],
+    "cons": [
+      "Single user"
+    ],
+    "alternatives": [
+      "uptime-kuma"
+    ],
+    "sources": [
+      {
+        "label": "Sentry pricing",
+        "url": "https://sentry.io/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "uptimerobot",
+    "name": "UptimeRobot (Free)",
+    "tagline": "50 uptime monitors at 5-minute intervals.",
+    "description": "Website and API uptime monitoring with alerts and a basic status page. Free plan allows commercial use.",
+    "categories": [
+      "development"
+    ],
+    "tags": [
+      "monitoring",
+      "uptime",
+      "status-page"
+    ],
+    "roles": [
+      "monitoring"
+    ],
+    "website": "https://uptimerobot.com/",
+    "docs": "https://uptimerobot.com/help/",
+    "pricingUrl": "https://uptimerobot.com/pricing/",
+    "freeType": "free-tier",
+    "flags": {
+      "noCard": true,
+      "noAccount": false,
+      "commercialUse": true,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "uptime"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "50 monitors, 5 minute interval, 1 basic status page."
+    ],
+    "pros": [
+      "Commercial use allowed",
+      "No credit card"
+    ],
+    "cons": [
+      "5 minute granularity"
+    ],
+    "alternatives": [
+      "uptime-kuma",
+      "sentry"
+    ],
+    "sources": [
+      {
+        "label": "UptimeRobot pricing",
+        "url": "https://uptimerobot.com/pricing/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "uptime-kuma",
+    "name": "Uptime Kuma",
+    "tagline": "Self-hosted uptime monitor with status pages.",
+    "description": "Self-hosted monitoring tool for HTTP, TCP, ping and more, with notifications and status pages.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "monitoring",
+      "uptime",
+      "self-hosted",
+      "status-page"
+    ],
+    "roles": [
+      "monitoring"
+    ],
+    "website": "https://uptime.kuma.pet/",
+    "docs": "https://github.com/louislam/uptime-kuma/wiki",
+    "repo": "https://github.com/louislam/uptime-kuma",
+    "freeType": "self-hosted",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "uptime"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "restrictions": [
+      "Monitoring from the same server as your app hides outages of that server."
+    ],
+    "pros": [
+      "Unlimited monitors",
+      "Many notification channels"
+    ],
+    "cons": [
+      "Needs its own host"
+    ],
+    "alternatives": [
+      "uptimerobot"
+    ],
+    "gem": "Unlimited monitors on a $0 Docker container. Gary monitors his monitors.",
+    "sources": [
+      {
+        "label": "MIT license file (louislam/uptime-kuma)",
+        "url": "https://github.com/louislam/uptime-kuma",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "n8n",
+    "name": "n8n (Community Edition)",
+    "tagline": "Workflow automation, self-hosted, fair-code license.",
+    "description": "Node-based workflow automation with hundreds of integrations. The self-hosted Community edition is free under the Sustainable Use License.",
+    "categories": [
+      "ai",
+      "open-source-local"
+    ],
+    "tags": [
+      "automation",
+      "workflows",
+      "ai-agents",
+      "self-hosted",
+      "no-code"
+    ],
+    "roles": [
+      "automation"
+    ],
+    "website": "https://n8n.io/",
+    "docs": "https://docs.n8n.io/hosting/",
+    "repo": "https://github.com/n8n-io/n8n",
+    "freeType": "community-edition",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "Sustainable Use License 1.0 (fair-code, not OSI)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "automation",
+        "ai-agents"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "restrictions": [
+      "License: use only for your own internal business purposes or non-commercial/personal use; redistribute only free of charge for non-commercial purposes.",
+      "Files marked .ee need an Enterprise license."
+    ],
+    "pros": [
+      "Visual workflows",
+      "AI agent nodes"
+    ],
+    "cons": [
+      "Not open source by OSI definition",
+      "Cannot resell as a service"
+    ],
+    "alternatives": [
+      "github-actions"
+    ],
+    "sources": [
+      {
+        "label": "Sustainable Use License license file (n8n-io/n8n)",
+        "url": "https://github.com/n8n-io/n8n",
+        "checkedAt": "2026-11-24"
+      },
+      {
+        "label": "n8n hosting docs",
+        "url": "https://docs.n8n.io/hosting/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "meilisearch",
+    "name": "Meilisearch",
+    "tagline": "Fast typo-tolerant search engine you can self-host.",
+    "description": "Search engine with instant, typo-tolerant results and a simple REST API. Core is MIT; some enterprise features are under BUSL.",
+    "categories": [
+      "development",
+      "open-source-local"
+    ],
+    "tags": [
+      "search",
+      "self-hosted",
+      "api"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.meilisearch.com/",
+    "docs": "https://www.meilisearch.com/docs",
+    "repo": "https://github.com/meilisearch/meilisearch",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": true,
+      "usageBased": false
+    },
+    "license": "MIT AND BUSL-1.1 (Enterprise Edition parts)",
+    "complexity": "medium",
+    "compat": {
+      "provides": [
+        "search"
+      ],
+      "requires": [
+        "server-runtime:any"
+      ]
+    },
+    "restrictions": [
+      "Enterprise Edition features are under the Business Source License 1.1."
+    ],
+    "pros": [
+      "Great relevance out of the box"
+    ],
+    "cons": [
+      "Another service to host"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "MIT/BUSL-1.1 license file (meilisearch/meilisearch)",
+        "url": "https://github.com/meilisearch/meilisearch",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "lucide",
+    "name": "Lucide",
+    "tagline": "Clean open source icon set with framework packages.",
+    "description": "Community-maintained icon library with packages for React, Vue, Svelte and plain SVG.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "icons",
+      "svg"
+    ],
+    "roles": [
+      "frontend"
+    ],
+    "website": "https://lucide.dev/",
+    "docs": "https://lucide.dev/guide/",
+    "repo": "https://github.com/lucide-icons/lucide",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "ISC",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "icons"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "Consistent style",
+      "Tree-shakable"
+    ],
+    "cons": [],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "ISC license file (lucide-icons/lucide)",
+        "url": "https://github.com/lucide-icons/lucide",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "penpot",
+    "name": "Penpot",
+    "tagline": "Open source design and prototyping, Figma-like.",
+    "description": "Web-based design and prototyping tool built on open standards (SVG), usable online or self-hosted.",
+    "categories": [
+      "design",
+      "open-source-local"
+    ],
+    "tags": [
+      "ui-ux",
+      "prototyping",
+      "design-tool",
+      "self-hosted"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://penpot.app/",
+    "docs": "https://help.penpot.app/",
+    "repo": "https://github.com/penpot/penpot",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": null,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MPL-2.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "design-tool"
+      ],
+      "requires": []
+    },
+    "notes": "Hosted plan terms were not verified here.",
+    "pros": [
+      "Self-hostable",
+      "Real CSS-friendly output"
+    ],
+    "cons": [
+      "Smaller plugin ecosystem"
+    ],
+    "alternatives": [
+      "excalidraw"
+    ],
+    "gem": "A design tool you can host yourself. Gary keeps his mockups next to his memes.",
+    "sources": [
+      {
+        "label": "MPL-2.0 license file (penpot/penpot)",
+        "url": "https://github.com/penpot/penpot",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "excalidraw",
+    "name": "Excalidraw",
+    "tagline": "Hand-drawn style whiteboard, open source.",
+    "description": "Virtual whiteboard for sketching diagrams with a hand-drawn look. Works in the browser without an account.",
+    "categories": [
+      "design",
+      "open-source-local"
+    ],
+    "tags": [
+      "whiteboard",
+      "diagrams",
+      "sketching"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://excalidraw.com/",
+    "docs": "https://docs.excalidraw.com/",
+    "repo": "https://github.com/excalidraw/excalidraw",
+    "freeType": "free-open-source",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": true,
+      "selfHostable": true,
+      "localFirst": true,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "MIT",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "whiteboard"
+      ],
+      "requires": []
+    },
+    "pros": [
+      "No signup",
+      "Embeddable React component"
+    ],
+    "cons": [],
+    "alternatives": [
+      "penpot"
+    ],
+    "gem": "Architecture diagrams that look like Gary drew them, which is the point.",
+    "sources": [
+      {
+        "label": "MIT license file (excalidraw/excalidraw)",
+        "url": "https://github.com/excalidraw/excalidraw",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "pricingUrl": null,
+    "restrictions": [],
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "unsplash",
+    "name": "Unsplash",
+    "tagline": "Free photos under the Unsplash License.",
+    "description": "Photo library usable for free, including commercially, without permission. Attribution is appreciated but not required.",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "images",
+      "stock-photos"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://unsplash.com/",
+    "docs": "https://unsplash.com/developers",
+    "pricingUrl": "https://unsplash.com/license",
+    "freeType": "fully-free",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": true,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Unsplash License",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "images"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "The license does not allow compiling Unsplash images to build a similar or competing service."
+    ],
+    "pros": [
+      "Commercial use allowed"
+    ],
+    "cons": [
+      "Popular images are everywhere"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "open-meteo",
+    "name": "Open-Meteo",
+    "tagline": "Weather API with no key for non-commercial use.",
+    "description": "Open weather forecast and historical API built on national weather services data. Free tier for non-commercial use, data under CC BY 4.0.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "weather",
+      "api",
+      "open-data"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://open-meteo.com/",
+    "docs": "https://open-meteo.com/en/docs",
+    "pricingUrl": "https://open-meteo.com/en/pricing",
+    "freeType": "non-commercial-only",
+    "flags": {
+      "noCard": true,
+      "noAccount": null,
+      "commercialUse": false,
+      "openSource": null,
+      "selfHostable": null,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "Data: CC BY 4.0",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "weather-data"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Free tier is non-commercial.",
+      "600 calls/min, 5,000/hour, 10,000/day, 300,000/month.",
+      "Attribution required (CC BY 4.0)."
+    ],
+    "pros": [
+      "Generous limits",
+      "Simple JSON"
+    ],
+    "cons": [
+      "Commercial use needs a paid plan"
+    ],
+    "alternatives": [],
+    "gem": "Weather data without signing up for anything. Jarvis notes: non-commercial only, Gary.",
+    "sources": [
+      {
+        "label": "Open-Meteo pricing",
+        "url": "https://open-meteo.com/en/pricing",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "osm-tiles",
+    "name": "OpenStreetMap standard tiles",
+    "tagline": "The community map tiles, under a strict usage policy.",
+    "description": "Map tiles served by the OpenStreetMap Foundation. Fine for light use with proper attribution; heavy use should go elsewhere.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "maps",
+      "geolocation",
+      "open-data",
+      "tiles"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.openstreetmap.org/",
+    "docs": "https://operations.osmfoundation.org/policies/tiles/",
+    "pricingUrl": "https://operations.osmfoundation.org/policies/tiles/",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": true,
+      "noAccount": true,
+      "commercialUse": null,
+      "openSource": true,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": "ODbL (data)",
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "map-tiles"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Visible attribution required.",
+      "Bulk downloading, prefetching and offline use are prohibited.",
+      "Send a clear, unique User-Agent. Best-effort service, no SLA."
+    ],
+    "pros": [
+      "Community data"
+    ],
+    "cons": [
+      "Not for heavy traffic"
+    ],
+    "alternatives": [],
+    "sources": [
+      {
+        "label": "OSM tile usage policy",
+        "url": "https://operations.osmfoundation.org/policies/tiles/",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "status": "verified",
+    "lastVerified": "2026-11-24"
+  },
+  {
+    "id": "coingecko-api",
+    "name": "CoinGecko API (Demo)",
+    "tagline": "Crypto prices and market data, free demo plan.",
+    "description": "Crypto market data API covering prices, market caps and exchanges. A free Demo plan exists with limited endpoints and rate limits.",
+    "categories": [
+      "data-apis"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "market-data",
+      "api"
+    ],
+    "roles": [
+      "extras"
+    ],
+    "website": "https://www.coingecko.com/en/api",
+    "docs": "https://docs.coingecko.com/",
+    "pricingUrl": "https://www.coingecko.com/en/api/pricing",
+    "freeType": "free-with-limits",
+    "flags": {
+      "noCard": null,
+      "noAccount": false,
+      "commercialUse": null,
+      "openSource": false,
+      "selfHostable": false,
+      "localFirst": false,
+      "potentialHostingCosts": false,
+      "usageBased": false
+    },
+    "license": null,
+    "complexity": "easy",
+    "compat": {
+      "provides": [
+        "crypto-data"
+      ],
+      "requires": []
+    },
+    "restrictions": [
+      "Demo plan quotas and attribution rules not captured: pricing page could not be fetched during verification."
+    ],
+    "pros": [
+      "Broad coverage"
+    ],
+    "cons": [
+      "Limits unverified here"
+    ],
+    "alternatives": [],
+    "status": "needs-review",
+    "sources": [
+      {
+        "label": "CoinGecko API docs",
+        "url": "https://docs.coingecko.com/reference/introduction",
+        "checkedAt": "2026-11-24"
+      }
+    ],
+    "repo": null,
+    "lastVerified": "2026-11-24"
+  }
+]

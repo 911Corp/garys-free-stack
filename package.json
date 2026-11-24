@@ -1,0 +1,39 @@
+{
+  "name": "garys-free-stack",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Gary's Free Stack. ship more. spend less.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && tsc -p tsconfig.json && vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "validate": "tsx scripts/validate-catalog.ts",
+    "check-links": "tsx scripts/check-links.ts",
+    "import:public-apis": "tsx scripts/import-public-apis.ts",
+    "stale": "tsx scripts/stale-report.ts"
+  },
+  "dependencies": {
+    "minisearch": "^7.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^25.0.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "vite-plugin-singlefile": "^2.3.4",
+    "vitest": "^2.1.9"
+  }
+}
